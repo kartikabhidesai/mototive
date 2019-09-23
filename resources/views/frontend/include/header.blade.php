@@ -21,9 +21,9 @@
 <!-- FontAwesome CSS -->
 <link rel="stylesheet" href="{{ url('frontend/assets/css/all.min.css') }}">
 <!--- owl carousel CSS-->
-<link rel="stylesheet" href="{{ url('frontend/assets/owlcarousel/css/owl.carousel.min.css') }}">
+<!--<link rel="stylesheet" href="{{ url('frontend/assets/owlcarousel/css/owl.carousel.min.css') }}">
 <link rel="stylesheet" href="{{ url('frontend/assets/owlcarousel/css/owl.theme.css') }}">
-<link rel="stylesheet" href="{{ url('frontend/assets/owlcarousel/css/owl.theme.default.min.css') }}">
+<link rel="stylesheet" href="{{ url('frontend/assets/owlcarousel/css/owl.theme.default.min.css') }}">-->
 <!-- Magnific Popup CSS -->
 <link rel="stylesheet" href="{{ url('frontend/assets/css/magnific-popup.css') }}">
 <!-- Style CSS -->

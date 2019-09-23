@@ -5,7 +5,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active background_bg overlay_bg" data-img-src="{{ url('frontend/assets/images/banner1.jpg') }}">
                 <div class="banner_slide_content">
-                    <div class="container"><!-- STRART CONTAINER -->
+                    <div class="container"><!-- START CONTAINER -->
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                                 <div class="banner_content text_white">

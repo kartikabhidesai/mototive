@@ -6,7 +6,7 @@
 <!-- Latest compiled and minified Bootstrap --> 
 <script src="{{ url('frontend/assets/bootstrap/js/bootstrap.min.js') }}"></script> 
 <!-- owl-carousel min js  --> 
-<script src="{{ url('frontend/assets/owlcarousel/js/owl.carousel.min.js') }}"></script> 
+<!--<script src="{{ url('frontend/assets/owlcarousel/js/owl.carousel.min.js') }}"></script>--> 
 <!-- magnific-popup min js  --> 
 <script src="{{ url('frontend/assets/js/magnific-popup.min.js') }}"></script> 
 <!-- waypoints min js  --> 
