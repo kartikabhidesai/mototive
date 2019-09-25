@@ -1,10 +1,10 @@
-<footer class="overlay_bg3 background_bg" data-img-src="{{ url('frontend/assets/images/footer_bg.jpg') }}">
+<footer class="overlay_bg3 background_bg" data-img-src="{{ url('public/frontend/assets/images/footer_bg.jpg') }}">
 	<div class="top_footer text_white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 	<div class="footer_logo">
-                    	<a href="index-2.html"><img alt="logo" src="{{ url('frontend/assets/images/logo_footer.png') }}"></a>
+                    	<a href="index-2.html"><img alt="logo" src="{{ url('public/frontend/assets/images/logo_footer.png') }}"></a>
                     </div>
                     <p>Phasellus blandit massa enim. elit id varius nunc. Lorem ipsum dolor sit amet, consectetur industry.</p>
                     <ul class="contact_info contact_info_light list_none">
@@ -39,7 +39,7 @@
                     	<li>
                         	<div class="post_footer">
                             	<div class="post_img">
-                                	<a href="#"><img src="{{ url('frontend/assets/images/letest_post1.jpg') }}" alt="letest_post1" /></a>
+                                	<a href="#"><img src="{{ url('public/frontend/assets/images/letest_post1.jpg') }}" alt="letest_post1" /></a>
                                 </div>
                                 <div class="post_content">
                                 	<h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
@@ -50,7 +50,7 @@
                         <li>
                         	<div class="post_footer">
                             	<div class="post_img">
-                                	<a href="#"><img src="{{ url('frontend/assets/images/letest_post2.jpg') }}" alt="letest_post1" /></a>
+                                	<a href="#"><img src="{{ url('public/frontend/assets/images/letest_post2.jpg') }}" alt="letest_post1" /></a>
                                 </div>
                                 <div class="post_content">
                                 	<h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
@@ -61,7 +61,7 @@
                         <li>
                         	<div class="post_footer">
                             	<div class="post_img">
-                                	<a href="#"><img src="{{ url('frontend/assets/images/letest_post3.jpg') }}" alt="letest_post1" /></a>
+                                	<a href="#"><img src="{{ url('public/frontend/assets/images/letest_post3.jpg') }}" alt="letest_post1" /></a>
                                 </div>
                                 <div class="post_content">
                                 	<h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>

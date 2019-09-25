@@ -3,23 +3,22 @@
 <section class="banner_section p-0 full_screen">
     <div id="carouselExampleControls" class="banner_content_wrap carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active background_bg overlay_bg" data-img-src="{{ url('frontend/assets/images/banner1.jpg') }}">
+            <div class="carousel-item active background_bg overlay_bg" data-img-src="{{ url('public/frontend/assets/images/banner1.jpg') }}">
                 <div class="banner_slide_content">
                     <div class="container"><!-- START CONTAINER -->
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                                 <div class="banner_content text_white">
-                                    <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Welcome To Anger.</h2>
-                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Lorem is simply text of the printing and typesetting industry.</p>
-                                    <a class="btn btn-default animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Get Started</a>
-                                    <a class="btn btn-outline-white animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Learn More</a>
+                                    <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Welcome To Mototive</h2>
+                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">We are here for you.</p>
+                               
                                 </div>
                             </div>
                         </div>
                     </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item background_bg overlay_bg" data-img-src="{{ url('frontend/assets/images/banner2.jpg') }}">
+            <div class="carousel-item background_bg overlay_bg" data-img-src="{{ url('public/frontend/assets/images/banner2.jpg') }}">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row">
@@ -27,8 +26,7 @@
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">easy To build </h2>
                                     <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Contrary to popular belief, Lorem Ipsum is not simply random</p>
-                                    <a class="btn btn-default animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Get Started</a>
-                                    <a class="btn btn-outline-white animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Learn More</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -43,16 +41,15 @@
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Faster And Easy</h2>
                                     <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Ipsum generators on the Internet tend to repeat predefined</p>
-                                    <a class="btn btn-default animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Get Started</a>
-                                    <a class="btn btn-outline-white animation" href="#" data-animation="fadeInUp" data-animation-delay="1.8s">Learn More</a>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div><!-- END CONTAINER-->
                 </div>
                 <div class="video_wrap">
-                    <video loop autoplay muted poster="{{ url('frontend/assets/images/video_poster.jpg') }}">
-                        <source src="{{ url('frontend/assets/images/sample.mp4') }}" type="video/mp4"></source>
+                    <video loop autoplay muted poster="{{ url('public/frontend/assets/images/video_poster.jpg') }}">
+                        <source src="{{ url('public/frontend/assets/images/sample.mp4') }}" type="video/mp4"></source>
                     </video>
                 </div>
             </div>
@@ -64,32 +61,32 @@
 <!-- END SECTION BANNER --> 
 
 <!-- START SECTION ABOUT US -->
-<section id="about" class="parallax_bg" data-parallax-bg-image="{{ url('frontend/assets/images/bubble.png') }}">
+<section id="about" class="parallax_bg" data-parallax-bg-image="{{ url('public/frontend/assets/images/bubble.png') }}">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12"> 
                 <div class="mb-4 mb-lg-0 animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
-                    <img src="{{ url('frontend/assets/images/about_img1.png') }}" alt="aboutimg"/> 
+                    <img src="{{ url('public/frontend/assets/images/about_img1.png') }}" alt="aboutimg"/> 
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 animation" data-animation="fadeInUp" data-animation-delay="0.1s">
                 <div class="heading_s1"> 
-                    <h1>About The Anger</h1>
+                    <h3>About The Mototive Web Solution</h3>
                 </div>
-                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+                <p>Mototive Web Solution develop Mobile Apps and Web development company based in India.We have knowledge in mobile apps development, web services, CMS & e-Commerce, UI/UX design</p>
                 <div class="row mb-4">
                     <div class="col-sm-6">
                         <div class="list_style_3">
                             <ul>
-                                <li>Multiple header layouts</li>
-                                <li>Responsive Design</li>
-                                <li>Nice Parallax Effect</li>
-                                <li>Easy to Customize</li>
-                                <li>Retina Ready</li>
+                                <li>Web Services</li>
+                                <li>Android app development </li>
+                                <li>IOS app development</li>
+                                <li>CMS & e-Commerce</li>
+                                <li>UI / UX design</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+<!--                    <div class="col-sm-6">
                         <div class="list_style_3">
                             <ul>
                                 <li>Modern Framework</li>
@@ -99,7 +96,7 @@
                                 <li>unique Design</li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <a href="#" class="btn btn-outline-default">Read More</a>	
             </div>
@@ -116,7 +113,7 @@
                 <div class="heading_s1 text-center">
                     <h2>Our Services</h2>
                 </div>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                <!--<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>-->
             </div>
         </div>
         <div class="row">
@@ -128,11 +125,11 @@
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
                 <div class="icon_box icon_box_style_1">
                     <div class="box_icon mb-3">	
-                        <i class="icon icon-display"></i>
+                        <i class="icon icon-sphere"></i>
                     </div>
                     <div class="icon_box_content">
-                        <h5>Responsive Design</h5>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <h5>Web Services</h5>
+                        <p>Productive and reliable web solutions for your business. We create any demanding custom software with professional excellence.</p>
                     </div>
                 </div>
             </div>
@@ -142,7 +139,7 @@
                         <i class="icon icon-eye"></i>
                     </div>
                     <div class="icon_box_content">
-                        <h5>Retina Ready</h5>
+                        <h5>Android app development</h5>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
                     </div>
                 </div>
@@ -197,7 +194,7 @@
 <!-- END SECTION FEATURE -->
 
 <!-- START SECTION INFORMATION -->
-<section class="background_bg position_right_bottom bg_norepeat bg_size_contain" data-img-src="{{ url('frontend/assets/images/pattren_bg1.png') }}">
+<section class="background_bg position_right_bottom bg_norepeat bg_size_contain" data-img-src="{{ url('public/frontend/assets/images/pattren_bg1.png') }}">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12 animation" data-animation="fadeInUp" data-animation-delay="0.1s">
@@ -232,7 +229,7 @@
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12"> 
                 <div class="mt-4 mt-lg-0 animation" data-animation="fadeInRight" data-animation-delay="0.1s">
-                    <img src="{{ url('frontend/assets/images/about_img2.png') }}" alt="aboutimg"/> 
+                    <img src="{{ url('public/frontend/assets/images/about_img2.png') }}" alt="aboutimg"/> 
                 </div>
             </div>
         </div>
@@ -312,7 +309,7 @@
                     <li class="portfolio-item design web">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="{{ url('frontend/assets/images/portfolio_item_small1_360X240.jpg') }}" alt="image">
+                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small1_360X240.jpg') }}" alt="image">
                             </a>
                             <div class="portfolio_content">
                                 <div class="link_container">
@@ -329,7 +326,7 @@
                     <li class="portfolio-item brands web adv">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="{{ url('frontend/assets/images/portfolio_item_small2_360X240.jpg') }}" alt="image">
+                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small2_360X240.jpg') }}" alt="image">
                             </a>
                             <div class="portfolio_content">
                                 <div class="link_container">
@@ -347,10 +344,10 @@
                         <div class="portfolio_item">
                             <div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000">
                                 <a href="#" class="image_link">
-                                    <img src="{{ url('frontend/assets/images/portfolio_item_small3_360X240.jpg') }}" alt="image">
+                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small3_360X240.jpg') }}" alt="image">
                                 </a>
                                 <a href="#" class="image_link">
-                                    <img src="{{ url('frontend/assets/images/portfolio_item_small23_360X240.jpg') }}" alt="image">
+                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small23_360X240.jpg') }}" alt="image">
                                 </a>
                             </div>
                             <div class="portfolio_content">
@@ -369,7 +366,7 @@
                     <li class="portfolio-item brands design web adv">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="{{ url('frontend/assets/images/portfolio_item_small4_360X240.jpg') }}" alt="image">
+                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small4_360X240.jpg') }}" alt="image">
                             </a>
                             <div class="portfolio_content">
                                 <div class="link_container">
@@ -386,7 +383,7 @@
                     <li class="portfolio-item brands adv">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="{{ url('frontend/assets/images/portfolio_item_small5_360X240.jpg') }}" alt="image">
+                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small5_360X240.jpg') }}" alt="image">
                             </a>
                             <div class="portfolio_content">
                                 <div class="link_container">
@@ -404,10 +401,10 @@
                         <div class="portfolio_item">
                             <div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3500">
                                 <a href="#" class="image_link">
-                                    <img src="{{ url('frontend/assets/images/portfolio_item_small7_360X240.jpg') }}" alt="image">
+                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small7_360X240.jpg') }}" alt="image">
                                 </a>
                                 <a href="#" class="image_link">
-                                    <img src="{{ url('frontend/assets/images/portfolio_item_small24_360X240.jpg') }}" alt="image">
+                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small24_360X240.jpg') }}" alt="image">
                                 </a>
                             </div>
                             <div class="portfolio_content">
@@ -426,7 +423,7 @@
                     <li class="portfolio-item brands design web adv">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="{{ url('frontend/assets/images/portfolio_item_small6_360X240.jpg') }}" alt="image">
+                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small6_360X240.jpg') }}" alt="image">
                             </a>
                             <div class="portfolio_content">
                                 <div class="link_container">
@@ -443,7 +440,7 @@
                     <li class="portfolio-item brands design web adv">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="{{ url('frontend/assets/images/portfolio_item_small8_360X240.jpg') }}" alt="image">
+                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small8_360X240.jpg') }}" alt="image">
                             </a>
                             <div class="portfolio_content">
                                 <div class="link_container">
@@ -484,7 +481,7 @@
                     <div class="item">
                         <div class="testimonial_box">
                             <div class="testimonial_img">
-                                <img class="rounded-circle m-auto" src="{{ url('frontend/assets/images/user1.jpg') }}" alt="user"/>
+                                <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user1.jpg') }}" alt="user"/>
                             </div>
                             <div class="testi_meta">
                                 <h6>Lissa Castro</h6>
@@ -496,7 +493,7 @@
                     <div class="item">
                         <div class="testimonial_box">
                             <div class="testimonial_img">
-                                <img class="rounded-circle m-auto" src="{{ url('frontend/assets/images/user2.jpg') }}" alt="user"/>
+                                <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user2.jpg') }}" alt="user"/>
                             </div>
                             <div class="testi_meta">
                                 <h6>Alden Smith</h6>
@@ -508,7 +505,7 @@
                     <div class="item">
                         <div class="testimonial_box">
                             <div class="testimonial_img">
-                                <img class="rounded-circle m-auto" src="{{ url('frontend/assets/images/user3.jpg') }}" alt="user"/>
+                                <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user3.jpg') }}" alt="user"/>
                             </div>
                             <div class="testi_meta">
                                 <h6>Daisy Lana</h6>
@@ -520,7 +517,7 @@
                     <div class="item">
                         <div class="testimonial_box">
                             <div class="testimonial_img">
-                                <img class="rounded-circle m-auto" src="{{ url('frontend/assets/images/user4.jpg') }}" alt="user"/>
+                                <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user4.jpg') }}" alt="user"/>
                             </div>
                             <div class="testi_meta">
                                 <h6>Alfred Amos</h6>
@@ -572,7 +569,7 @@
                 <div class="blog_post blog_style1">
                     <div class="blog_img">
                         <a href="#">
-                            <img src="{{ url('frontend/assets/images/blog_small_img1_350X198.jpg') }}" alt="blog_small_img1_350X198">
+                            <img src="{{ url('public/frontend/assets/images/blog_small_img1_350X198.jpg') }}" alt="blog_small_img1_350X198">
                         </a>
                     </div>
                     <div class="blog_content bg-white">
@@ -592,7 +589,7 @@
                 <div class="blog_post blog_style1">
                     <div class="blog_img">
                         <a href="#">
-                            <img src="{{ url('frontend/assets/images/blog_small_img2_350X198.jpg') }}" alt="blog_small_img2_350X198">
+                            <img src="{{ url('public/frontend/assets/images/blog_small_img2_350X198.jpg') }}" alt="blog_small_img2_350X198">
                         </a>
                     </div>
                     <div class="blog_content bg-white">
@@ -612,7 +609,7 @@
                 <div class="blog_post blog_style1">
                     <div class="blog_img">
                         <a href="#">
-                            <img src="{{ url('frontend/assets/images/blog_small_img3_350X198.jpg') }}" alt="blog_small_img3_350X198">
+                            <img src="{{ url('public/frontend/assets/images/blog_small_img3_350X198.jpg') }}" alt="blog_small_img3_350X198">
                         </a>
                     </div>
                     <div class="blog_content bg-white">
@@ -640,22 +637,22 @@
             <div class="col-md-12 animation" data-animation="fadeInDown" data-animation-delay="0.1s">
                 <div class="cl_logo_slider owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-dots="false" data-autoplay-timeout="2000">
                     <div class="item">
-                        <a href="#"><img src="{{ url('frontend/assets/images/cl_logo1.png') }}" alt="cl_logo1"/></a>
+                        <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo1.png') }}" alt="cl_logo1"/></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="{{ url('frontend/assets/images/cl_logo2.png') }}" alt="cl_logo2"/></a>
+                        <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo2.png') }}" alt="cl_logo2"/></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="{{ url('frontend/assets/images/cl_logo3.png') }}" alt="cl_logo3"/></a>
+                        <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo3.png') }}" alt="cl_logo3"/></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="{{ url('frontend/assets/images/cl_logo4.png') }}" alt="cl_logo4"/></a>
+                        <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo4.png') }}" alt="cl_logo4"/></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="{{ url('frontend/assets/images/cl_logo5.png') }}" alt="cl_logo5"/></a>
+                        <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo5.png') }}" alt="cl_logo5"/></a>
                     </div>
                     <div class="item">
-                        <a href="#"><img src="{{ url('frontend/assets/images/cl_logo6.png') }}" alt="cl_logo6"/></a>
+                        <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo6.png') }}" alt="cl_logo6"/></a>
                     </div>
                 </div>
             </div>
