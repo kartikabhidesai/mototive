@@ -1,4 +1,6 @@
-
+@php
+$currRoute = Route::current()->getName();
+@endphp
 <header class="header_wrap fixed-top light_skin hover_menu_style2 transparent-header">
 	<div class="top-header light_skin d-none d-md-block">
         <div class="container">
@@ -32,22 +34,22 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                 <li class="dropdown dropdown-mega-menu">
-                    <a data-toggle="dropdown" class="nav-link  active" href="#">Home</a>  
+                    <a class="nav-link {{ ($currRoute == 'dashboard')  ? 'active' : '' }}" href="{{ route('dashboard') }}">Home</a>  
+                </li>
+                <li class=" dropdown-mega-menu">
+                    <a class="nav-link {{ ($currRoute == 'Services')  ? 'active' : '' }}" href="{{ route('Services') }}">Services</a>  
                 </li>
                 <li class="dropdown dropdown-mega-menu">
-                    <a data-toggle="dropdown" class="nav-link" href="#">Services</a>  
+                    <a class="nav-link {{ ($currRoute == 'Portfolio')  ? 'active' : '' }}" href="{{ route('Portfolio') }}">Portfolio</a>  
                 </li>
                 <li class="dropdown dropdown-mega-menu">
-                    <a data-toggle="dropdown" class="nav-link" href="#">Portfolio</a>  
+                    <a class="nav-link {{ ($currRoute == 'Aboutus')  ? 'active' : '' }}" href="{{ route('Aboutus') }}">About Us</a>  
                 </li>
                 <li class="dropdown dropdown-mega-menu">
-                    <a data-toggle="dropdown" class="nav-link" href="#">About Us</a>  
+                    <a class="nav-link {{ ($currRoute == 'Contactus')  ? 'active' : '' }}" href="{{ route('Contactus') }}">Contact Us</a>  
                 </li>
                 <li class="dropdown dropdown-mega-menu">
-                    <a data-toggle="dropdown" class="nav-link" href="#">Contact Us</a>  
-                </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a data-toggle="dropdown" class="nav-link" href="#">Blog</a>  
+                    <a class="nav-link {{ ($currRoute == 'Blog')  ? 'active' : '' }}" href="{{ route('Blog') }}">Blog</a>  
                 </li>
                 
             </ul>

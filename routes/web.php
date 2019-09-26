@@ -24,3 +24,8 @@ Route::match(['get', 'post'], 'forgotpassword', ['as' => 'forgotpassword', 'uses
 
 
 Route::match(['get', 'post'], 'dashboard', ['as' => 'dashboard', 'uses' => 'frontend\HomeController@dashboard']);
+Route::match(['get', 'post'], 'Services', ['as' => 'Services', 'uses' => 'frontend\HomeController@services']);
+Route::match(['get', 'post'], 'Portfolio', ['as' => 'Portfolio', 'uses' => 'frontend\HomeController@portfolio']);
+Route::match(['get', 'post'], 'Aboutus', ['as' => 'Aboutus', 'uses' => 'frontend\HomeController@aboutus']);
+Route::match(['get', 'post'], 'Contactus', ['as' => 'Contactus', 'uses' => 'frontend\HomeController@contactus']);
+Route::match(['get', 'post'], 'Blog', ['as' => 'Blog', 'uses' => 'frontend\HomeController@blog']);
