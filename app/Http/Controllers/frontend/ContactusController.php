@@ -2,22 +2,22 @@
 
 namespace App\Http\Controllers\frontend;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Route;
-class HomeController extends Controller
+use Illuminate\Http\Request;
+
+class ContactusController extends Controller
 {
     function __construct() {
        
     }
-    public function dashboard(){
+    public function contactus(){
         
-        $data['title'] = 'Mototive Websolution - Home';
+        $data['title'] = 'Mototive Websolution - Contact us';
         $data['css'] = array();
         $data['plugincss'] = array();
         $data['pluginjs'] = array();
         $data['js'] = array();
         $data['funinit'] = array(); 
-        return view('frontend.pages.dashboard',$data);
+        return view('frontend.pages.contactus',$data);
     }
 }

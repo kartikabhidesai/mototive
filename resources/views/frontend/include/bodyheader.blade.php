@@ -34,7 +34,7 @@ $currRoute = Route::current()->getName();
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                 <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link {{ ($currRoute == 'dashboard')  ? 'active' : '' }}" href="{{ route('dashboard') }}">Home</a>  
+                    <a class="nav-link {{ ($currRoute == 'Dashboard')  ? 'active' : '' }}" href="{{ route('Dashboard') }}">Home</a>  
                 </li>
                 <li class=" dropdown-mega-menu">
                     <a class="nav-link {{ ($currRoute == 'Services')  ? 'active' : '' }}" href="{{ route('Services') }}">Services</a>  
