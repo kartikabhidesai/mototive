@@ -10,27 +10,26 @@
                     <ul class="contact_info contact_info_light list_none">
                         <li>
                             <span class="ti-location-pin"></span>
-                            <address>123 Street, Old Trafford, New South London , UK</address>
+                            <address>G-106 Titanium City Center, Satellite, Ahmedabad, Gujarat, India</address>
                         </li>
                         <li>
                             <span class="ti-email"></span>
-                            <a href="mailto:info@sitename.com">info@sitename.com</a>
+                            <a href="mailto:info@mototivewebsolution.com">info@mototivewebsolution.com</a>
                         </li>
                         <li>
                             <span class="ti-mobile"></span>
-                            <p>+ 457 789 789 65</p>
+                            <p>+91 88666 20260</p>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
                 	<h6 class="widget_title">USEFUL LINKS</h6>
                     <ul class="list_none widget_links">
-                    	<li><a href="#">Buy Anger Now</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="{{ route('Aboutus') }}">About Us</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Feedback</a></li>
                         <li><a href="#">Support center</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="{{ route('Contactus') }}">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
@@ -100,7 +99,7 @@
     	<div class="container">
         	<div class="row align-items-center">
             	<div class="col-md-6">
-                	<p class="copyright m-md-0 text-center text-md-left">&copy; 2018 All Rights Reserved by Anger.</p>
+                	<p class="copyright m-md-0 text-center text-md-left">&copy; {{ date('Y') }} All Rights Reserved by Mototive.</p>
                 </div>
                 <div class="col-md-6">
                 	<ul class="list_none footer_link text-center text-md-right">

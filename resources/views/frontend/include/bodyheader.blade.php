@@ -7,8 +7,8 @@ $currRoute = Route::current()->getName();
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <ul class="contact_detail list_none text-center text-md-left">
-                        <li><i class="ti-mobile"></i>+91 84605 26226</li>
-                        <li><i class="ti-location-pin"></i>G-106 Titanium City Center, Satellite, Ahmedabad,Gujarat </li>
+                        <li><i class="ti-mobile"></i>+91 88666 20260</li>
+                        <li><i class="ti-location-pin"></i>G-106 Titanium City Center, Satellite, Ahmedabad, Gujarat, India</li>
                     </ul>
                 </div>
                 <div class="col-md-4">

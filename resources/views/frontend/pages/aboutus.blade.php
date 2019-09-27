@@ -439,15 +439,15 @@
                 <ul class="contact_info contact_info_style1 list_none">
                     <li>
                         <span class="ti-location-pin"></span>
-                        <address>123 Street, New South London , UK</address>
+                        <address>G-106 Titanium City Center, Satellite, Ahmedabad, Gujarat, India</address>
                     </li>
                     <li>
                         <span class="ti-email"></span>
-                        <a href="mailto:info@sitename.com">info@sitename.com</a>
+                        <a href="mailto:info@mototivewebsolution.com">info@mototivewebsolution.com</a>
                     </li>
                     <li>
                         <span class="ti-mobile"></span>
-                        <p>+ 457 789 789 65</p>
+                        <p>+91 88666 20260</p>
                     </li>
                 </ul>
                 <span id="map" class="btn btn-outline-black mt-3">View Map</span>
