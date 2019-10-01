@@ -25,11 +25,11 @@
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.3s">
                 	<h6 class="widget_title">USEFUL LINKS</h6>
                     <ul class="list_none widget_links">
-                        <li><a href="{{ route('Aboutus') }}">About Us</a></li>
+                        <li><a href="{{ route('aboutus') }}">About Us</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Feedback</a></li>
                         <li><a href="#">Support center</a></li>
-                        <li><a href="{{ route('Contactus') }}">Contact Us</a></li>
+                        <li><a href="{{ route('contactus') }}">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
