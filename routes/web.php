@@ -23,9 +23,13 @@ Route::match(['get', 'post'], 'signup', ['as' => 'signup', 'uses' => 'admin\Logi
 Route::match(['get', 'post'], 'forgotpassword', ['as' => 'forgotpassword', 'uses' => 'admin\LoginController@forgotpassword']);
 
 
-Route::match(['get', 'post'], 'Dashboard', ['as' => 'Dashboard', 'uses' => 'frontend\HomeController@dashboard']);
-Route::match(['get', 'post'], 'Services', ['as' => 'Services', 'uses' => 'frontend\ServicesController@services']);
-Route::match(['get', 'post'], 'Portfolio', ['as' => 'Portfolio', 'uses' => 'frontend\PortfolioController@portfolio']);
-Route::match(['get', 'post'], 'Aboutus', ['as' => 'Aboutus', 'uses' => 'frontend\AboutusController@aboutus']);
-Route::match(['get', 'post'], 'Contactus', ['as' => 'Contactus', 'uses' => 'frontend\ContactusController@contactus']);
-Route::match(['get', 'post'], 'Blog', ['as' => 'Blog', 'uses' => 'frontend\BlogController@blog']);
+Route::match(['get', 'post'], 'dashboard', ['as' => 'dashboard', 'uses' => 'frontend\HomeController@dashboard']);
+Route::match(['get', 'post'], 'services', ['as' => 'services', 'uses' => 'frontend\ServicesController@services']);
+Route::match(['get', 'post'], 'portfolio', ['as' => 'portfolio', 'uses' => 'frontend\PortfolioController@portfolio']);
+Route::match(['get', 'post'], 'aboutus', ['as' => 'aboutus', 'uses' => 'frontend\AboutusController@aboutus']);
+Route::match(['get', 'post'], 'contactus', ['as' => 'contactus', 'uses' => 'frontend\ContactusController@contactus']);
+Route::match(['get', 'post'], 'blog', ['as' => 'blog', 'uses' => 'frontend\BlogController@blog']);
+
+
+//Admin Route 
+Route::match(['get', 'post'], 'admin', ['as' => 'admin', 'uses' => 'backend\LoginController@login']);
