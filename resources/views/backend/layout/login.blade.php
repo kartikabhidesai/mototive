@@ -15,11 +15,56 @@
 
 	<!-- vendor css -->
 	<link rel="stylesheet" href="{{ url('public/backend/assets/css/style.css') }}">
+	<link rel="stylesheet" href="{{ url('public/backend/assets/css/plugins/toastr/toastr.min.css') }}">
+        
+        @if (!empty($plugincss)) 
+            @foreach ($plugincss as $value) 
+                @if(!empty($value))
+                    <link rel="stylesheet" href="{{ url('public/backend/assets/css/plugins'.$value) }}">
+                @endif
+            @endforeach
+        @endif
+        @if (!empty($css)) 
+        @foreach ($css as $value) 
+        @if(!empty($value))
+            <link rel="stylesheet" href="{{ url('public/backend/assets/css/'.$value) }}">
+        @endif
+        @endforeach
+        @endif
+        <script>
+                var baseurl = "{{ asset('/') }}";
+        </script>
 </head>
+
     @yield('content')
     
+
+<script src="{{ url('public/backend/assets/js/jquery-3.1.1.min.js') }}"></script>
 <script src="{{ url('public/backend/assets/js/vendor-all.min.js') }}"></script>
 <script src="{{ url('public/backend/assets/js/plugins/bootstrap.min.js') }}"></script>
 <script src="{{ url('public/backend/assets/js/ripple.js') }}"></script>
 <script src="{{ url('public/backend/assets/js/pcoded.min.js') }}"></script>
+<script src="{{ url('public/backend/assets/js/plugins/toastr/toastr.min.js') }}"></script>
+<script src="{{ url('public/backend/assets/js/comman_function.js') }}"></script>
+
+    @if (!empty($pluginjs)) 
+        @foreach ($pluginjs as $value) 
+            <script src="{{ url('public/backend/assets/js/plugins/'.$value) }}" type="text/javascript"></script>
+        @endforeach
+    @endif
+    @if (!empty($js)) 
+        @foreach ($js as $value) 
+            <script src="{{ url('public/backend/assets/js/customjs/'.$value) }}" type="text/javascript"></script>
+        @endforeach
+    @endif
+<script>
+        jQuery(document).ready(function() {
+        @if (!empty($funinit))
+                @foreach ($funinit as $value)
+        {{  $value }}
+        @endforeach
+                @endif
+        });
+</script>
+
 </body>

@@ -29,7 +29,14 @@ Route::match(['get', 'post'], 'portfolio', ['as' => 'portfolio', 'uses' => 'fron
 Route::match(['get', 'post'], 'aboutus', ['as' => 'aboutus', 'uses' => 'frontend\AboutusController@aboutus']);
 Route::match(['get', 'post'], 'contactus', ['as' => 'contactus', 'uses' => 'frontend\ContactusController@contactus']);
 Route::match(['get', 'post'], 'blog', ['as' => 'blog', 'uses' => 'frontend\BlogController@blog']);
+ 
 
-
-//Admin Route 
 Route::match(['get', 'post'], 'admin', ['as' => 'admin', 'uses' => 'backend\LoginController@login']);
+Route::match(['get', 'post'], 'createPassword', ['as' => 'createPassword', 'uses' => 'backend\LoginController@createPassword']);
+Route::match(['get', 'post'], 'logout', ['as' => 'logout', 'uses' => 'backend\LoginController@getLogout']);
+$adminPrefix = "";
+Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
+    
+Route::match(['get', 'post'], 'admin-dashboard', ['as' => 'admin-dashboard', 'uses' => 'backend\dashboard\DashboardController@dashboard']);
+
+});
