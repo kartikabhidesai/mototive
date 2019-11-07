@@ -10,9 +10,8 @@
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About Us 2</li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item">About Us</li>
                     </ol>
                 </nav>
             </div>
@@ -28,10 +27,10 @@
             <div class="col-lg-4 col-sm-12 p-lg-0 animation" data-animation="fadeInLeft" data-animation-delay="0.2s">
                 <div class="small_padding bg-dark h-100 text_white d-lg-flex justify-content-center flex-lg-column">
                     <div class="heading_s3 mb-3"> 
-                        <h3>About The Anger</h3>
+                        <h3>About The MOTOTIVE</h3>
                     </div>
-                    <p>Nam eget neque pellentesque, efficitur neque at, ornare orci. Morbi convallis a eros fermentum rhoncus. Morbi convallis a eros fermentum rhoncus lorem. Vestibulum ligula orci, volutpat id aliquet eget, consectetur eget ante. Duis pharetra for nec rhoncus felis sagittis nec amet ultricies lorem.</p>
-                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.Iipsum dolor sit amet, consectetur adipiscing elitllus blandit massa enim.</p>
+                    <p>We help you to transform your business by creating digital products with innovative ideas. We have nearly 60 clients who use our services regularly.</p>
+                    <p>Our culture drives us and our values define us. Come discover Hidden Brains - the best platform to take your career to new heights.</p>
                 </div>
             </div>
             <div class="col-lg-4 p-lg-0 animation" data-animation="zoomIn" data-animation-delay="0.2s">
@@ -104,13 +103,14 @@
                 <div class="heading_s3 mb-3"> 
                     <h3>Why Choose Us</h3>
                 </div>
-                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+                <p>MOTOTIVE WEB Solutions is a IT solution provider who values our relationships with clients. Strong, positive relationships.
+                    We help you manage risks and build confidence in your technology systems.</p>
                 <div class="list_style_4 color_blue">
                     <ul>
-                        <li>Consectetur adipiscing elitllus blandit massa enim</li>
-                        <li>Vestibulum ligula orci, volutpat id aliquet eget</li>
-                        <li>Duis pharetra for nec rhoncus felis</li>
-                        <li>ou need to be sure there isn't anything</li>
+                        <li>Focus on innovation</li>
+                        <li>True partners</li>
+                        <li>Dedicated teams</li>
+                        <li>Respect of the client needs</li>
                     </ul>
                 </div>
             </div>
@@ -179,28 +179,28 @@
                     <div class="col-6 couter_border counter_border_black">
                         <div class="box_counter counter_style1 counter_dark text-center">
                             <i class="ion-coffee"></i>
-                            <h3 class="counter_text"><span class="counter">800</span>+</h3>
+                            <h3 class="counter_text"><span class="counter">400</span>+</h3>
                             <p>Cups of Coffee</p>
                         </div>
                     </div>
                     <div class="col-6 couter_border counter_border_black">
                         <div class="box_counter counter_style1 counter_dark text-center">
                             <i class="ion-clock"></i>
-                            <h3 class="counter_text"><span class="counter">1700</span></h3>
+                            <h3 class="counter_text"><span class="counter">2400</span></h3>
                             <p>Hours of Development</p>
                         </div>
                     </div>
                     <div class="col-6 couter_border counter_border_black">
                         <div class="box_counter counter_style1 counter_dark text-center">
                             <i class="ion-easel"></i>
-                            <h3 class="counter_text"><span class="counter">1200</span>+</h3>
+                            <h3 class="counter_text"><span class="counter">75</span>+</h3>
                             <p>Project Complete</p>
                         </div>
                     </div>
                     <div class="col-6 couter_border counter_border_black">
                         <div class="box_counter counter_style1 counter_dark text-center">
                             <i class="ion-android-contacts"></i>
-                            <h3 class="counter_text"><span class="counter">1500</span>+</h3>
+                            <h3 class="counter_text"><span class="counter">60</span>+</h3>
                             <p>Happy Clients</p>
                         </div>
                     </div>

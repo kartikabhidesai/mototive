@@ -25,7 +25,7 @@ $currRoute = Route::current()->getName();
     </div>
     <div class="container">
         <nav class="navbar navbar-expand-lg"> 
-            <a class="navbar-brand" href="index-2.html">
+            <a class="navbar-brand" href="{{ route('dashboard') }}">
                 <img class="logo_light" src="{{ url('public/frontend/assets/images/logo_white.png') }}" alt="logo" />
                 <img class="logo_dark" src="{{ url('public/frontend/assets/images/logo_dark.png') }}" alt="logo" />
                 <img class="logo_default" src="{{ url('public/frontend/assets/images/logo_dark.png') }}" alt="logo" />

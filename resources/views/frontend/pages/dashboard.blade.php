@@ -25,7 +25,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 text-left">
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">easy To build </h2>
-                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Contrary to popular belief, Lorem Ipsum is not simply random</p>
+                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">we give easy way to understand what we do.</p>
                                    
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 text-right">
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Faster And Easy</h2>
-                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Ipsum generators on the Internet tend to repeat predefined</p>
+                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Give fastest output for client's.</p>
                                     
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                 <div class="heading_s1"> 
                     <h3>About The Mototive Web Solution</h3>
                 </div>
-                <p>Mototive Web Solution develop Mobile Apps and Web development company based in India.We have knowledge in mobile apps development, web services, CMS & e-Commerce, UI/UX design</p>
+                <p>Mototive Web Solution develop Mobile Apps and Web development company based in India.We have knowledge in mobile apps development, web services, SEO, UI/UX design</p>
                 <div class="row mb-4">
                     <div class="col-sm-6">
                         <div class="list_style_3">
@@ -81,24 +81,13 @@
                                 <li>Web Services</li>
                                 <li>Android app development </li>
                                 <li>IOS app development</li>
-                                <li>CMS & e-Commerce</li>
+                                <li>SEO specialist</li>
                                 <li>UI / UX design</li>
                             </ul>
                         </div>
                     </div>
-<!--                    <div class="col-sm-6">
-                        <div class="list_style_3">
-                            <ul>
-                                <li>Modern Framework</li>
-                                <li>Full Documentation</li>
-                                <li>Amazing Features</li>
-                                <li>Pixel Perfect</li>
-                                <li>unique Design</li>
-                            </ul>
-                        </div>
-                    </div>-->
                 </div>
-                <a href="#" class="btn btn-outline-default">Read More</a>	
+                <a href="{{ route('services') }}" class="btn btn-outline-default">Read More</a>	
             </div>
         </div>
     </div>
@@ -199,7 +188,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12 animation" data-animation="fadeInUp" data-animation-delay="0.1s">
                 <div class="heading_s1"> 
-                    <h2>Lorem Ipsum Dolor!</h2>
+                    <h2>MOTOTIVE WEB SOLUTION</h2>
                 </div>
                 <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
                 <div class="row">
@@ -208,9 +197,8 @@
                             <ul>
                                 <li>Multiple header layouts</li>
                                 <li>Responsive Design</li>
-                                <li>Nice Parallax Effect</li>
+                                <li>Nice Effect</li>
                                 <li>Easy to Customize</li>
-                                <li>Retina Ready</li>
                             </ul>
                         </div>
                     </div>
@@ -220,7 +208,6 @@
                                 <li>Modern Framework</li>
                                 <li>Full Documentation</li>
                                 <li>Amazing Features</li>
-                                <li>Pixel Perfect</li>
                                 <li>Unique Design</li>
                             </ul>
                         </div>

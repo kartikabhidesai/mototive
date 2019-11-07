@@ -2,7 +2,6 @@
 <script src="{{ url('public/backend/assets/js/plugins/bootstrap.min.js') }}"></script>
 <script src="{{ url('public/backend/assets/js/ripple.js') }}"></script>
 <script src="{{ url('public/backend/assets/js/pcoded.min.js') }}"></script>
-<script src="{{ url('public/backend/assets/js/menu-setting.min.js') }}"></script>
 
 <script src="{{ url('public/backend/assets/js/plugins/apexcharts.min.js') }}"></script>
 <!-- custom-chart js -->

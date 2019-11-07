@@ -11,7 +11,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Phoenixcoded" />
 	<!-- Favicon icon -->
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="{{ url('public/backend/assets/images/favicon.ico') }}" type="image/x-icon">
 
 	<!-- vendor css -->
 	<link rel="stylesheet" href="{{ url('public/backend/assets/css/style.css') }}">

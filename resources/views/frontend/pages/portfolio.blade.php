@@ -1,18 +1,24 @@
 @extends('frontend.layout.app')
 @section('content')
 <!-- START SECTION BANNER -->
-<section class="banner_section parallax_bg overlay_bg" data-parallax-bg-image="{{ url('public/frontend/assets/images/portfolio_signle_bg1.jpg') }}">
-    <div class="container"><!-- STRART CONTAINER -->
-        <div class="row justify-content-center">
-            <div class="col-xl-9 col-lg-12 col-sm-12 text-center">
-                <div class="banner_content text_white">
-                    <h2 class="animation text-uppercase" data-animation="fadeInUp" data-animation-delay="0.4s">expedita distinctio</h2>
-                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="0.6s">Lorem is simply text of the printing and typesetting industry.</p>
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="{{ url('public/frontend/assets/images/portfolio_signle_bg1.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Portfolio</h1>
                 </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item">Portfolio</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </div>
 </section>
+
 <!-- END SECTION BANNER --> 
 
 <!-- START SECTION PORTFOLIO DETAIL -->
