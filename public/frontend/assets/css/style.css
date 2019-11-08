@@ -618,11 +618,9 @@ button:focus {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */ 
 }
 	
-.form-control,
-.form-control:focus,
-.custom-file-input:focus ~ .custom-file-label {
-	color: #000;
-	box-shadow: none;
+
+.has-error{
+        border-color: #ff0000;
 }
 .gray_bg {
 	background-color: #f7f7f7;

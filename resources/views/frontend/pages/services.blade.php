@@ -71,10 +71,10 @@
     	<div class="row align-items-center animation" data-animation="fadeInUp" data-animation-delay="0.2s">
             <div class="col-md-8 text_white">
                 <h2 class="">We always stay with our clients.</h2>
-                <p class="mb-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.</p>
+                <!--<p class="mb-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.</p>-->
             </div>
             <div class="col-md-4 text-md-right">	
-                <a href="#" class="btn btn-outline-white">Contact Us</a>
+                <a href="{{ route('contactus') }}" class="btn btn-outline-white">Contact Us</a>
             </div>
         </div>
     </div>

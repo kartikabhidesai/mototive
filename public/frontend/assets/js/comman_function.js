@@ -264,7 +264,7 @@ function showToster(status, message) {
         closeButton: true,
         progressBar: true,
         showMethod: 'slideDown',
-        timeOut: 4000
+        timeOut: 2000
     };
     if (status == 'success') {
         toastr.success(message, 'Success');
@@ -288,7 +288,7 @@ function handleAjaxResponse(output) {
     if (typeof output.redirect !== 'undefined' && output.redirect != '') {
         setTimeout(function () {
             window.location.href = output.redirect;
-        }, 4000);
+        }, 2000);
     }
     if (typeof output.jscode !== 'undefined' && output.jscode != '') {
         eval(output.jscode);

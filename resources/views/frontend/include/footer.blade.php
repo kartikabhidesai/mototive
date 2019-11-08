@@ -25,3 +25,26 @@
 <script src="{{ url('public/frontend/assets/js/jquery.elevatezoom.js') }}"></script> 
 <!-- scripts js --> 
 <script src="{{ url('public/frontend/assets/js/scripts.js') }}"></script>
+@if (!empty($pluginjs)) 
+@foreach ($pluginjs as $value) 
+<script src="{{ url('public/frontend/assets/js/'.$value) }}" type="text/javascript"></script>
+@endforeach
+@endif
+@if (!empty($js)) 
+@foreach ($js as $value) 
+<script src="{{ url('public/frontend/assets/js/'.$value) }}" type="text/javascript"></script>
+@endforeach
+@endif
+
+<script src="{{ url('public/frontend/assets/js/toastr.min.js') }}" type="text/javascript"></script>
+<script src="{{ url('public/frontend/assets/js/comman_function.js') }}" ></script>
+
+<script>
+jQuery(document).ready(function () {
+    @if (!empty($funinit))
+            @foreach ($funinit as $value)
+            {{ $value }}
+    @endforeach
+            @endif
+});
+</script>

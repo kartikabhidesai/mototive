@@ -11,7 +11,7 @@
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Welcome To Mototive</h2>
                                     <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">We are here for you.</p>
-                               
+
                                 </div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">easy To build </h2>
                                     <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">we give easy way to understand what we do.</p>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Faster And Easy</h2>
                                     <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Give fastest output for client's.</p>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -118,29 +118,29 @@
                     </div>
                     <div class="icon_box_content">
                         <h5>Web Services</h5>
-                        <p>Productive and reliable web solutions for your business. We create any demanding custom software with professional excellence.</p>
+                        <p>Web services is a standardized way or medium to propagate communication between the client and server applications on the world wide web.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
                 <div class="icon_box icon_box_style_1">
                     <div class="box_icon mb-3">	
-                        <i class="icon icon-eye"></i>
+                        <i class="icon icon-android"></i>
                     </div>
                     <div class="icon_box_content">
                         <h5>Android app development</h5>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <p>Our company provides android application development, shopping cart integration along with domain registration.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
                 <div class="icon_box icon_box_style_1">
                     <div class="box_icon mb-3">	
-                        <i class="icon icon-equalizer2"></i>
+                        <i class="fas fa-mobile"></i>
                     </div>
                     <div class="icon_box_content">
-                        <h5>Parallax Effact</h5>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <h5>IOS app development</h5>
+                        <p>Manage critical business processes with ease. Integrate seamlessly with other apps. Gain freedom from buggy, poorly coded apps.</p>
                     </div>
                 </div>
             </div>
@@ -150,19 +150,19 @@
                         <i class="icon icon-embed2"></i>
                     </div>
                     <div class="icon_box_content">
-                        <h5>Html5 & Css3</h5>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <h5>Html / Css / Java / PHP / Laravel </h5>
+                        <p>Responsive Website Development. Bootstrap Advance Java Script / Angular JS Development. Client Communication.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-3 text-center">
                 <div class="icon_box icon_box_style_1">
                     <div class="box_icon mb-3">	
-                        <i class="icon icon-lifebuoy"></i>
+                        <i class="fas fa-headset"></i>
                     </div>
                     <div class="icon_box_content">
                         <h5>Expert Support</h5>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <p>MOTOTIVE Expert support help businesses and individuals use technology to keep their Businsess running smoothly.</p>
                     </div>
                 </div>
             </div>
@@ -173,7 +173,7 @@
                     </div>
                     <div class="icon_box_content">
                         <h5>Easy To Customize</h5>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <p>We provides easy customization on web services, android application and ios application. Depending on client's demand.</p>
                     </div>
                 </div>
             </div>
@@ -190,7 +190,7 @@
                 <div class="heading_s1"> 
                     <h2>MOTOTIVE WEB SOLUTION</h2>
                 </div>
-                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+                <p>Our strength is to understand what you need and translate it into clear technical requirements.Being on top of things and consequently following an iterative approach always leads us to successful project completion.We build state of the art software applications which run reliably 24x7</p>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="list_style_2 color_blue">
@@ -238,21 +238,21 @@
             <div class="col-lg-3 col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
                 <div class="box_counter counter_style2 text-center">
                     <i class="ion-clock"></i>
-                    <h3 class="counter_text"><span class="counter">1700</span></h3>
+                    <h3 class="counter_text"><span class="counter">1200</span></h3>
                     <p>Hours of Development</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.7s">
                 <div class="box_counter counter_style2 text-center">
                     <i class="ion-easel"></i>
-                    <h3 class="counter_text"><span class="counter">1200</span>+</h3>
+                    <h3 class="counter_text"><span class="counter">75</span>+</h3>
                     <p>Project Complete</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.8s">
                 <div class="box_counter counter_style2 text-center">
                     <i class="ion-android-contacts"></i>
-                    <h3 class="counter_text"><span class="counter">1500</span>+</h3>
+                    <h3 class="counter_text"><span class="counter">60</span>+</h3>
                     <p>Happy Clients</p>
                 </div>
             </div>
@@ -267,9 +267,9 @@
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-9 animation" data-animation="fadeInUp" data-animation-delay="0.1s">
                 <div class="heading_s1 text-center">
-                    <h2>Our Letest works</h2>
+                    <h2>Explore our new website</h2>
                 </div>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                <!--<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>-->
             </div>
         </div>
         <div class="row">
@@ -526,10 +526,10 @@
         <div class="row align-items-center">
             <div class="col-md-8 text_white animation" data-animation="fadeInUp" data-animation-delay="0.5s">
                 <h2 class="">We always stay with our clients.</h2>
-                <p class="mb-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.</p>
+                <!--<p class="mb-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.</p>-->
             </div>
             <div class="col-md-4 text-md-right animation" data-animation="fadeInUp" data-animation-delay="0.6s">	
-                <a href="#" class="btn btn-outline-white">Contact Us</a>
+                <a href="{{ route('contactus') }}" class="btn btn-outline-white">Contact Us</a>
             </div>
         </div>
     </div>

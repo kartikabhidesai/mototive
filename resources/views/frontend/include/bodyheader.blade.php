@@ -2,7 +2,7 @@
 $currRoute = Route::current()->getName();
 @endphp
 <header class="header_wrap fixed-top light_skin hover_menu_style2 transparent-header">
-	<div class="top-header light_skin d-none d-md-block">
+    <div class="top-header light_skin d-none d-md-block">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-8">
@@ -33,28 +33,29 @@ $currRoute = Route::current()->getName();
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link {{ ($currRoute == 'dashboard')  ? 'active' : '' }}" href="{{ route('dashboard') }}">Home</a>  
-                </li>
-                <li class=" dropdown-mega-menu">
-                    <a class="nav-link {{ ($currRoute == 'services')  ? 'active' : '' }}" href="{{ route('services') }}">Services</a>  
-                </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link {{ ($currRoute == 'portfolio')  ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>  
-                </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link {{ ($currRoute == 'aboutus')  ? 'active' : '' }}" href="{{ route('aboutus') }}">About Us</a>  
-                </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link {{ ($currRoute == 'contactus')  ? 'active' : '' }}" href="{{ route('contactus') }}">Contact Us</a>  
-                </li>
-                <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link {{ ($currRoute == 'blog')  ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>  
-                </li>
-                
-            </ul>
+                    <li class="dropdown dropdown-mega-menu">
+                        <a class="nav-link {{ ($currRoute == 'dashboard')  ? 'active' : '' }}" href="{{ route('dashboard') }}">Home</a>  
+                    </li>
+                    <li class=" dropdown-mega-menu">
+                        <a class="nav-link {{ ($currRoute == 'services')  ? 'active' : '' }}" href="{{ route('services') }}">Services</a>  
+                    </li>
+                    <li class="dropdown dropdown-mega-menu">
+                        <a class="nav-link {{ ($currRoute == 'portfolio')  ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>  
+                    </li>
+                    <li class="dropdown dropdown-mega-menu">
+                        <a class="nav-link {{ ($currRoute == 'aboutus')  ? 'active' : '' }}" href="{{ route('aboutus') }}">About Us</a>  
+                    </li>
+                    <li class="dropdown dropdown-mega-menu">
+                        <a class="nav-link {{ ($currRoute == 'contactus')  ? 'active' : '' }}" href="{{ route('contactus') }}">Contact Us</a>  
+                    </li>
+                    <li class="dropdown dropdown-mega-menu">
+                        <a class="nav-link {{ ($currRoute == 'blog')  ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>  
+                    </li>
+                </ul>
             </div>
-           
+            @if($currRoute != "contactus")
+                <a href="{{ route('contactus') }}" class="btn btn-black  d-none d-sm-block" style='border-radius: 25px;'>Get Started</a>
+            @endif
         </nav>
     </div>
 </header>
