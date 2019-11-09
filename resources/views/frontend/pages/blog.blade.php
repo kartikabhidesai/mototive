@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <div class="page-title">
-                    <h1>Blog list No sidebar</h1>
+                    <h1>Blog</h1>
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
