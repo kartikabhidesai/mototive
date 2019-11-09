@@ -119,31 +119,31 @@
                     <div class="col-xl-6 col-lg-12 col-sm-6 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
                         <div class="icon_box icon_box_style_2 mt-3">
                             <div class="box_icon">	
-                                <i class="icon icon-display"></i>
+                                <i class="icon icon-sphere"></i>
                             </div>
                             <div class="icon_box_content">
-                                <h5>Responsive Design</h5>
-                                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+                                <h5>Web Services</h5>
+                                <p>Web services is a standardized way or medium to propagate communication between the client and server applications on the world wide web.</p>
                             </div>
                         </div>
                         <div class="icon_box icon_box_style_2 mt-3">
                             <div class="box_icon">	
-                                <i class="icon icon-eye"></i>
+                                <i class="icon icon-android"></i>
                             </div>
                             <div class="icon_box_content">
-                                <h5>Retina Ready</h5>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                                <h5>Android app development</h5>
+                                <p>Our company provides android application development, shopping cart integration along with domain registration.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-12 col-sm-6 animation" data-animation="fadeInUp" data-animation-delay="0.5s">
                         <div class="icon_box icon_box_style_2 mt-3">
                             <div class="box_icon">	
-                                <i class="icon icon-equalizer2"></i>
+                                <i class="icon icon-mobile"></i>
                             </div>
                             <div class="icon_box_content">
-                                <h5>Parallax Effact</h5>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                                <h5>IOS app development</h5>
+                                <p>Manage critical business processes with ease. Integrate seamlessly with other apps. Gain freedom from buggy, poorly coded apps.</p>
                             </div>
                         </div>
                         <div class="icon_box icon_box_style_2 mt-3">
@@ -151,8 +151,30 @@
                                 <i class="icon icon-embed2"></i>
                             </div>
                             <div class="icon_box_content">
-                                <h5>Html5 & Css3</h5>
-                                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
+                                <h5>Html / Css / Java / PHP / Laravel </h5>
+                                <p>Responsive Website Development. Bootstrap Advance Java Script / Angular JS Development. Client Communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-sm-6 animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+                        <div class="icon_box icon_box_style_2 mt-3">
+                            <div class="box_icon">	
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="icon_box_content">
+                                <h5>Expert Support</h5>
+                                <p>MOTOTIVE Expert support help businesses and individuals use technology to keep their Businsess running smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-sm-6 animation" data-animation="fadeInUp" data-animation-delay="0.5s">
+                        <div class="icon_box icon_box_style_2 mt-3">
+                            <div class="box_icon">	
+                                <i class="icon icon-cog"></i>
+                            </div>
+                            <div class="icon_box_content">
+                                <h5>Easy To Customize</h5>
+                                <p>We provides easy customization on web services, android application and ios application. Depending on client's demand.</p>
                             </div>
                         </div>
                     </div>
@@ -171,7 +193,7 @@
                 <div class="heading_s3 mb-3 text-center text-md-left">
                     <h3>Get to know us!</h3>
                 </div>
-                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+                <p>With every great company you'll find great people. MOTOTIVE WEB SOLUTION is no exception. Our team of experts will help design the right solutions for you.</p>
                 <a href="#" class="btn btn-outline-black">know More</a>
             </div>
             <div class="col-lg-6 offset-lg-1 col-md-7 col-sm-12 col-11 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
@@ -237,7 +259,7 @@
                             <div class="testi_meta">
                                 <h6>Lissa Castro</h6>
                                 <span>Co-Founder</span>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>Great work!!! The team was solid, efficient and knowledgeable. They did an amazing job on my very challenging app. I will be using them again. Thank you for doing such a great job!</p>
                             </div>
                         </div>
                     </div>
@@ -249,7 +271,7 @@
                             <div class="testi_meta">
                                 <h6>Alden Smith</h6>
                                 <span>Creative Designer</span>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>MOTOTIVE WEB Solutions has done a great job taking our company’s idea and developing a website as per our niche specifications. The team is technically strong and creative. I will not hesitate to recommend them.</p>
                             </div>
                         </div>
                     </div>
@@ -261,7 +283,7 @@
                             <div class="testi_meta">
                                 <h6>Daisy Lana</h6>
                                 <span>Creative Director</span>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>We got our APP delivered on time. we are quite happy with the work. I see a great future for this company. Keep making happy clients</p>
                             </div>
                         </div>
                     </div>
@@ -273,7 +295,7 @@
                             <div class="testi_meta">
                                 <h6>Alfred Amos</h6>
                                 <span>Creative Director</span>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>It has been an easy ride being associated with MOTOTIVE. They provide wide range of solutions for all spheres of our business. Their softwares are user friendly and the MOTOTIVE team is readily available 24*7 for support.</p>
                             </div>
                         </div>
                     </div>
@@ -381,11 +403,11 @@
                 <div class="cta_section_small background_bg blue_overlay_bg position-relative fixed_bg animation" data-animation="fadeInUp" data-animation-delay="0.2s" data-img-src="{{ url('public/frontend/assets/images/cta_bg.jpg') }}">
                     <div class="row align-items-center">
                         <div class="col-md-8 text_white">
-                            <h2 class="">We always stay with our clients.</h2>
-                            <p class="mb-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.</p>
+                            <h2 class="">We always stay with you.</h2>
+                            <p class="mb-md-0">We provide a broad range of software development services to help you.</p>
                         </div>
                         <div class="col-md-4 text-md-right">	
-                            <a href="#" class="btn btn-outline-white">Contact Us</a>
+                            <a href="{{ route('contactus') }}" class="btn btn-outline-white">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -427,64 +449,5 @@
 <!-- START SECTION CLIENT LOGO -->
 
 <!-- START SECTION CONTACT -->
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                <div class="heading_s2">
-                    <span class="sub_title">Contact Us</span>
-                    <h2>Get In touch</h2>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
-                <ul class="contact_info contact_info_style1 list_none">
-                    <li>
-                        <span class="ti-location-pin"></span>
-                        <address>G-106 Titanium City Center, Satellite, Ahmedabad, Gujarat, India</address>
-                    </li>
-                    <li>
-                        <span class="ti-email"></span>
-                        <a href="mailto:info@mototivewebsolution.com">info@mototivewebsolution.com</a>
-                    </li>
-                    <li>
-                        <span class="ti-mobile"></span>
-                        <p>+91 88666 20260</p>
-                    </li>
-                </ul>
-                <span id="map" class="btn btn-outline-black mt-3">View Map</span>
-            </div>
-            <div class="col-lg-8 col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
-                <div class="clearfix large_divider d-none d-md-block"></div>
-                <div class="clearfix medium_divider d-xl-none"></div>
-                <div class="field_form">
-                    <form method="post" name="enq">
-                        <div class="row">
-                            <div class="form-group col-lg-6">
-                                <input required="required" placeholder="Enter Name *" id="first-name" class="form-control" name="name" type="text">
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <input required="required" placeholder="Enter Email *" id="email" class="form-control" name="email" type="email">
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <input placeholder="Enter Subject" id="subject" class="form-control" name="subject" type="subject">
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <textarea required="required" placeholder="Message *" id="description" class="form-control" name="message" rows="3"></textarea>
-                            </div>
-                            <div class="col-lg-12">
-                                <button type="submit" title="Submit Your Message!" class="btn btn-default" id="submitButton" name="submit" value="Submit">Submit</button>
-                            </div>
-                            <div class="col-lg-12">
-                                <div id="alert-msg" class="alert-msg text-center"></div>
-                            </div>
-                        </div>
-                    </form>		
-                </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193229.77301255226!2d-74.05531241936525!3d40.823236500441624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f613438663b5%3A0xce20073c8862af08!2sW+123rd+St%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1533565007513" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- END SECTION CONTACT -->
 @endsection

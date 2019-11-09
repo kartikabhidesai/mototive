@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="{{ route('services') }}" class="btn btn-outline-default">Read More</a>	
+                <a href="{{ route('aboutus') }}" class="btn btn-outline-default">Read More</a>	
             </div>
         </div>
     </div>
@@ -225,7 +225,7 @@
 <!-- END SECTION INFORMATION --> 
 
 <!-- START SECTION COUNTER --> 
-<section class="counter_wrap overlay_bg3 parallax_bg" data-parallax-bg-image="{{ ('frontend/assets/images/counter_bg1.jpg') }}">
+<section class="counter_wrap overlay_bg3 parallax_bg" data-parallax-bg-image="{{ ('public/frontend/assets/images/counter_bg1.jpg') }}">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.5s">
@@ -473,7 +473,7 @@
                             <div class="testi_meta">
                                 <h6>Lissa Castro</h6>
                                 <span>Co-Founder</span>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>Great work!!! The team was solid, efficient and knowledgeable. They did an amazing job on my very challenging app. I will be using them again. Thank you for doing such a great job!</p>
                             </div>
                         </div>
                     </div>
@@ -485,7 +485,7 @@
                             <div class="testi_meta">
                                 <h6>Alden Smith</h6>
                                 <span>Creative Designer</span>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>MOTOTIVE WEB Solutions has done a great job taking our company’s idea and developing a website as per our niche specifications. The team is technically strong and creative. I will not hesitate to recommend them.</p></p>
                             </div>
                         </div>
                     </div>
@@ -497,7 +497,7 @@
                             <div class="testi_meta">
                                 <h6>Daisy Lana</h6>
                                 <span>Creative Director</span>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>We got our APP delivered on time. we are quite happy with the work. I see a great future for this company. Keep making happy clients</p>
                             </div>
                         </div>
                     </div>
@@ -509,7 +509,7 @@
                             <div class="testi_meta">
                                 <h6>Alfred Amos</h6>
                                 <span>Creative Director</span>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                <p>It has been an easy ride being associated with MOTOTIVE. They provide wide range of solutions for all spheres of our business. Their softwares are user friendly and the MOTOTIVE team is readily available 24*7 for support.</p>
                             </div>
                         </div>
                     </div>

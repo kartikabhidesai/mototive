@@ -6,7 +6,7 @@
                 	<div class="footer_logo">
                     	<a href="index-2.html"><img alt="logo" src="{{ url('public/frontend/assets/images/logo_footer.png') }}"></a>
                     </div>
-                    <p>Phasellus blandit massa enim. elit id varius nunc. Lorem ipsum dolor sit amet, consectetur industry.</p>
+                    <p>If you have any query or suggestions you can contact us.</p>
                     <ul class="contact_info contact_info_light list_none">
                         <li>
                             <span class="ti-location-pin"></span>
@@ -41,8 +41,8 @@
                                 	<a href="#"><img src="{{ url('public/frontend/assets/images/letest_post1.jpg') }}" alt="letest_post1" /></a>
                                 </div>
                                 <div class="post_content">
-                                	<h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
-                                    <p class="small m-0">April 14, 2018</p>
+                                	<h6><a href="#">This text is just for testing purpose.</a></h6>
+                                    <p class="small m-0">Nov 09, 2019</p>
                                 </div>
                             </div>
                         </li>
@@ -52,8 +52,8 @@
                                 	<a href="#"><img src="{{ url('public/frontend/assets/images/letest_post2.jpg') }}" alt="letest_post1" /></a>
                                 </div>
                                 <div class="post_content">
-                                	<h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
-                                    <p class="small m-0">April 14, 2018</p>
+                                	<h6><a href="#">This text is just for testing purpose.</a></h6>
+                                    <p class="small m-0">Nov 09, 2019</p>
                                 </div>
                             </div>
                         </li>
@@ -63,8 +63,8 @@
                                 	<a href="#"><img src="{{ url('public/frontend/assets/images/letest_post3.jpg') }}" alt="letest_post1" /></a>
                                 </div>
                                 <div class="post_content">
-                                	<h6><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h6>
-                                    <p class="small m-0">April 14, 2018</p>
+                                	<h6><a href="#">This text is just for testing purpose.</a></h6>
+                                    <p class="small m-0">Nov 09, 2019</p>
                                 </div>
                             </div>
                         </li>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.5s">
                     <h6 class="widget_title">Subscribe Newsletter</h6>
-                    <p>Contrary to popular belief of lorem Ipsm Latin amet ltin from consectetur industry.</p>
+                    <p>Stay with us and enjoy all the new update about MOTOTIVE WEB SOLUTION.</p>
                     <div class="newsletter_form mb-4">
                         <form> 
                             <div class="outline_input">
