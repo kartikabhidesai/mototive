@@ -22,6 +22,9 @@ Route::get('/', 'frontend\HomeController@dashboard');
 //Route::match(['get', 'post'], 'signup', ['as' => 'signup', 'uses' => 'admin\LoginController@signup']);
 //Route::match(['get', 'post'], 'forgotpassword', ['as' => 'forgotpassword', 'uses' => 'admin\LoginController@forgotpassword']);
 
+//testing email
+Route::match(['get', 'post'], 'testingmail', ['as' => 'testingmail', 'uses' => 'LoginController@testingmail']);
+
 //slider
 
 Route::match(['get', 'post'], 'dashboard', ['as' => 'dashboard', 'uses' => 'frontend\HomeController@dashboard']);

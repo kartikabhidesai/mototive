@@ -22,7 +22,7 @@
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 text-left">
+                            <div class="col-lg-12 col-md-12 col-sm-12 text-right">
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">easy To build </h2>
                                     <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">we give easy way to understand what we do.</p>
@@ -230,16 +230,16 @@
         <div class="row">
             <div class="col-lg-3 col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.5s">
                 <div class="box_counter counter_style2 text-center">
-                    <i class="ion-coffee"></i>
-                    <h3 class="counter_text"><span class="counter">800</span>+</h3>
-                    <p>Cups of Coffee</p>
+                    <i class="ion-email"></i>
+                    <h3 class="counter_text"><span style="font-size: 20px">EMAIL</span></h3>
+                    <p>info@mototivewebsolution.com</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
                 <div class="box_counter counter_style2 text-center">
                     <i class="ion-clock"></i>
-                    <h3 class="counter_text"><span class="counter">1200</span></h3>
-                    <p>Hours of Development</p>
+                    <h3 class="counter_text"><span style="font-size: 20px">WORKING HOURS</span></h3>
+                    <p>Mon to Sat - 11 AM to 8 PM</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-6 animation" data-animation="fadeInUp" data-animation-delay="0.7s">
