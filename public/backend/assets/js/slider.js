@@ -24,8 +24,8 @@ var Slider = function () {
         var form = $('#addSlider');
         var rules = {
             sliderimage: {required: true},
-            text: {required: true, maxlength: 15},
-            title: {required: true, maxlength: 20}
+            text: {required: true},
+            title: {required: true}
         };
 
         handleFormValidate(form, rules, function (form) {
@@ -55,8 +55,8 @@ var Slider = function () {
 
         var form = $('#editslider');
         var rules = {
-            text: {required: true, maxlength: 15},
-            title: {required: true, maxlength: 20}
+            text: {required: true},
+            title: {required: true}
         };
 
         handleFormValidate(form, rules, function (form) {

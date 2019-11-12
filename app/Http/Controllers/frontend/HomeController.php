@@ -14,6 +14,8 @@ class HomeController extends Controller
     }
     public function dashboard(){
         
+        $objSlider = new Slider();
+        $data['slider'] = $objSlider->getSlider();
         $data['title'] = 'Mototive Websolution - Home';
         $data['css'] = array();
         $data['plugincss'] = array();

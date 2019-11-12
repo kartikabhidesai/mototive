@@ -11,21 +11,21 @@
                                 <div class="banner_content text_white">
                                     <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Welcome To Mototive</h2>
                                     <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">We are here for you.</p>
-
                                 </div>
                             </div>
                         </div>
                     </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item background_bg overlay_bg" data-img-src="{{ url('public/frontend/assets/images/banner2.jpg') }}">
+            @foreach($slider as $value)
+            <div class="carousel-item background_bg overlay_bg" data-img-src="{{ url('public/uploads/slider/'.$value->image) }}">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 text-right">
                                 <div class="banner_content text_white">
-                                    <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">easy To build </h2>
-                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">we give easy way to understand what we do.</p>
+                                    <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">{{ $value->text }}</h2>
+                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">{{ $value->title }}</p>
 
                                 </div>
                             </div>
@@ -33,26 +33,7 @@
                     </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item overlay_bg">
-                <div class="banner_slide_content">
-                    <div class="container"><!-- STRART CONTAINER -->
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 text-right">
-                                <div class="banner_content text_white">
-                                    <h2 class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s">Faster And Easy</h2>
-                                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s">Give fastest output for client's.</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- END CONTAINER-->
-                </div>
-                <div class="video_wrap">
-                    <video loop autoplay muted poster="{{ url('public/frontend/assets/images/video_poster.jpg') }}">
-                        <source src="{{ url('public/frontend/assets/images/sample.mp4') }}" type="video/mp4"></source>
-                    </video>
-                </div>
-            </div>
+            @endforeach
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><i class="ion-chevron-left"></i></a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><i class="ion-chevron-right"></i></a>
