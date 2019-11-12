@@ -9,7 +9,6 @@ $items = Session::get('logindata');
 </div>
 <!-- [ Pre-loader ] End -->
 <!-- [ navigation menu ] start -->
-@foreach($result as $value)
 <nav class="pcoded-navbar menu-light ">
     <div class="navbar-wrapper  ">
         <div class="navbar-content scroll-div " >
@@ -18,7 +17,7 @@ $items = Session::get('logindata');
                 <div class="main-menu-header">
                     <img class="img-radius" src="{{ url('public/backend/assets/images/user/avatar-2.jpg')}}" alt="User-Profile-Image">
                     <div class="user-details">
-                        <div id="more-details">{{ $value->name }} <i class="fa fa-caret-down"></i></div>
+                        <div id="more-details"> <i class="fa fa-caret-down"></i></div>
                     </div>
                 </div>
                 <div class="collapse" id="nav-user-link">
@@ -35,10 +34,12 @@ $items = Session::get('logindata');
                     <label>Navigation</label>
                 </li>
                 <li class="nav-item {{ ($currRoute == 'admin-dashboard')  ? 'active' : '' }}">
-                    <a href="" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+                    <a href="{{ route('admin-dashboard') }}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+                </li>
+                <li class="nav-item {{ ($currRoute == 'slider' || $currRoute == 'addslider')  ? 'active' : '' }}">
+                    <a href="{{ route('slider') }}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-film"></i></span><span class="pcoded-mtext">Slider</span></a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-@endforeach

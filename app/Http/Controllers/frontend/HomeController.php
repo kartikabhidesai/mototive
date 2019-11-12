@@ -5,6 +5,8 @@ namespace App\Http\Controllers\frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Route;
+use App\model\Slider;
+
 class HomeController extends Controller
 {
     function __construct() {

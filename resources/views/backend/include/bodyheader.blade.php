@@ -94,7 +94,7 @@
                     <div class="dropdown-menu dropdown-menu-right profile-notification">
                         <div class="pro-head">
                             <img src="{{ url('public/backend/assets/images/user/avatar-1.jpg') }}" class="img-radius" alt="User-Profile-Image">
-                            <span>{{ isset($result) ? $result[0]['name'] : '' }}</span>
+                            <span>john doe</span>
                             <a href="{{ route('logout') }}" class="dud-logout" title="Logout">
                                 <i class="feather icon-log-out"></i>
                             </a>

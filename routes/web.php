@@ -43,4 +43,9 @@ Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
     
 Route::match(['get', 'post'], 'admin-dashboard', ['as' => 'admin-dashboard', 'uses' => 'backend\dashboard\DashboardController@dashboard']);
 
+//slider
+Route::match(['get', 'post'], 'slider', ['as' => 'slider', 'uses' => 'backend\slider\SliderController@slider']);
+Route::match(['get', 'post'], 'slider-ajaxAction', ['as' => 'slider-ajaxAction', 'uses' => 'backend\slider\SliderController@ajaxAction']);
+Route::match(['get', 'post'], 'editsilder', ['as' => 'editsilder', 'uses' => 'backend\slider\SliderController@editslider']);
+
 });

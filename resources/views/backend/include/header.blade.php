@@ -8,7 +8,24 @@
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
     <link rel="icon" href="{{ url('public/backend/assets/images/favicon.ico') }}" type="image/x-icon">
-
+    <link href="{{ url('public/backend/assets/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
     <!-- vendor css -->
     <link rel="stylesheet" href="{{ url('public/backend/assets/css/style.css') }}">
+    <script>
+        var baseurl = "{{ asset('/') }}";
+    </script>
+    @if (!empty($plugincss)) 
+    @foreach ($plugincss as $value) 
+    @if(!empty($value))
+    <link rel="stylesheet" href="{{ url('public/backend/assets/css/plugins/'.$value) }}">
+    @endif
+    @endforeach
+    @endif
+    @if (!empty($css)) 
+    @foreach ($css as $value) 
+    @if(!empty($value))
+    <link rel="stylesheet" href="{{ url('public/backend/assets/'.$value) }}">
+    @endif
+    @endforeach
+    @endif
 </head>

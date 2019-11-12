@@ -16,10 +16,7 @@ class DashboardController extends Controller
     
     public function dashboard(Request $request){
         
-        $session = $request->session()->all();
-        $userid = Session::get('logindata')[0]['id'];
-        $objDashboard = new Dashboard();
-        $data['result'] = $objDashboard->getUserdata($userid);
+        
         $data['title'] = 'Mototive Websolution - Dashboard';
         $data['css'] = array();
         $data['plugincss'] = array();
