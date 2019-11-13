@@ -26,9 +26,8 @@
                 	<h6 class="widget_title">USEFUL LINKS</h6>
                     <ul class="list_none widget_links">
                         <li><a href="{{ route('aboutus') }}">About Us</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Feedback</a></li>
-                        <li><a href="#">Support center</a></li>
+                        <li><a href="{{ route('features') }}">Features</a></li>
+                        <li><a href="{{ route('contactus') }}">Support center</a></li>
                         <li><a href="{{ route('contactus') }}">Contact Us</a></li>
                     </ul>
                 </div>
