@@ -27,20 +27,11 @@ var Slider = function () {
             text: {required: true},
             title: {required: true}
         };
-
         handleFormValidate(form, rules, function (form) {
             handleAjaxFormSubmit(form, true);
         });
 
-        var form = $('#editslider');
-        var rules = {
-            text: {required: true},
-            title: {required: true}
-        };
 
-        handleFormValidate(form, rules, function (form) {
-            handleAjaxFormSubmit(form, true);
-        });
 
         $('body').on("click", ".editslider ", function () {
             var id = $(this).attr("data-id");
@@ -63,7 +54,14 @@ var Slider = function () {
 
         });
 
-
+        var form = $('#editslider');
+        var rules = {
+            text: {required: true},
+            title: {required: true}
+        };
+        handleFormValidate(form, rules, function (form) {
+            handleAjaxFormSubmit(form, true);
+        });
 
         $('body').on("click", ".deleteslider", function () {
             var id = $(this).attr("data-id");

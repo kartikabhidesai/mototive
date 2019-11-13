@@ -36,32 +36,6 @@ class SliderController extends Controller {
         return view('backend.pages.slider.slider_list', $data);
     }
 
-    public function addslider(Request $request) {
-
-        if ($request->isMethod('post')) {
-
-            $objSlider = new Slider();
-            $result = $objSlider->addSlider($request);
-            if ($result) {
-                $return['status'] = 'success';
-                $return['message'] = 'Slider image successfully added.';
-                $return['redirect'] = route('slider');
-            } else {
-                $return['status'] = 'error';
-                $return['message'] = 'Something goes to wrong';
-            }
-            echo json_encode($return);
-            exit;
-        }
-        $data['title'] = 'Mototive Websolution - Dashboard';
-        $data['css'] = array();
-        $data['plugincss'] = array();
-        $data['pluginjs'] = array('jquery.validate.min.js');
-        $data['js'] = array('ajaxfileupload.js', 'jquery.form.min.js', 'slider.js');
-        $data['funinit'] = array('Slider.init()');
-        return view('backend.pages.slider.addslider', $data);
-    }
-
     public function editslider(Request $request) {
 
         if ($request->isMethod('post')) {
