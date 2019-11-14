@@ -49,4 +49,9 @@ Route::match(['get', 'post'], 'slider', ['as' => 'slider', 'uses' => 'backend\sl
 Route::match(['get', 'post'], 'slider-ajaxAction', ['as' => 'slider-ajaxAction', 'uses' => 'backend\slider\SliderController@ajaxAction']);
 Route::match(['get', 'post'], 'editsilder', ['as' => 'editsilder', 'uses' => 'backend\slider\SliderController@editslider']);
 
+//Projec Type
+Route::match(['get', 'post'], 'project-type', ['as' => 'project-type', 'uses' => 'backend\project_type\project_typeController@index']);
+Route::match(['get', 'post'], 'project-type-ajaxAction', ['as' => 'project-type-ajaxAction', 'uses' => 'backend\project_type\project_typeController@ajaxAction']);
+Route::match(['get', 'post'], 'editproject-type', ['as' => 'editproject-type', 'uses' => 'backend\project_type\project_typeController@editproject-type']);
+
 });

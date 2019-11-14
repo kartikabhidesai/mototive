@@ -39,6 +39,9 @@ $items = Session::get('logindata');
                 <li class="nav-item {{ ($currRoute == 'slider' || $currRoute == 'addslider')  ? 'active' : '' }}">
                     <a href="{{ route('slider') }}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-film"></i></span><span class="pcoded-mtext">Slider</span></a>
                 </li>
+                <li class="nav-item {{ ($currRoute == 'project-type')  ? 'active' : '' }}">
+                    <a href="{{ route('project-type') }}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-command"></i></span><span class="pcoded-mtext">Project-Type</span></a>
+                </li>
             </ul>
         </div>
     </div>
