@@ -37,16 +37,16 @@ class project_typeController extends Controller {
         return view('backend.pages.project_type.project_type', $data);
     }
 
-    public function editslider(Request $request) {
+    public function editproject_type(Request $request) {
 
         if ($request->isMethod('post')) {
 
-            $objSlider = new Slider();
-            $data = $objSlider->editslider($request);
+            $objProject = new Project_type();
+            $data = $objProject->editproject_type($request);
             if ($data) {
                 $return['status'] = 'success';
-                $return['message'] = 'Slider Edited successfully.';
-                $return['redirect'] = route('slider');
+                $return['message'] = 'Project Type Edited successfully.';
+                $return['redirect'] = route('project-type');
             } else {
                 $return['status'] = 'error';
                 $return['message'] = 'something will be wrong.';
@@ -54,7 +54,7 @@ class project_typeController extends Controller {
             echo json_encode($return);
             exit;
         } else {
-            return redirect('slider');
+            return redirect('project-type');
         }
     }
     
@@ -63,17 +63,32 @@ class project_typeController extends Controller {
         switch ($action) {
 
             case 'getdatatable':
-                $objProduct_type = new Project_type();
-                $list = $objProduct_type->getdatatable();
+                $objProject_type = new Project_type();
+                $list = $objProject_type->getdatatable();
                 echo json_encode($list);
                 break;
             
             case 'edittype':
 
-                $objProduct_type = new Project_type();
-                $data['projecttype'] = $objProduct_type->viewtype($request->input('id'));
+                $objProject_type = new Project_type();
+                $data['projecttype'] = $objProject_type->viewtype($request->input('id'));
                 $result = view('backend.pages.project_type.edit_project_type', $data);
                 echo $result;
+                break;
+            
+             case 'deletetype':
+                $objProject_type = new Project_type();
+
+                $res = $objProject_type->deletetype($request->input('data'));
+                if ($res) {
+                    $return['status'] = 'success';
+                    $return['message'] = 'Project Type deleted successfully.';
+                    $return['redirect'] = route('project-type');
+                } else {
+                    $return['status'] = 'error';
+                    $return['message'] = 'something will be wrong.';
+                }
+                echo json_encode($return);
                 break;
         }
     }

@@ -9,7 +9,7 @@ class Project_type extends Model {
     protected $table = "project_type";
 
     public function addProjectType($request) {
-        
+
         $objProject = new Project_type();
         $objProject->type = $request->input('type');
         $objProject->created_at = date("Y-m-d h:i:s");
@@ -24,7 +24,26 @@ class Project_type extends Model {
                 ->get();
         return $query[0];
     }
-    
+
+    public function editproject_type($request) {
+
+        $objProject = Project_type::find($request->input('id'));
+        $objProject->type = $request->input('type');
+        $objProject->created_at = date("Y-m-d h:i:s");
+        $objProject->updated_at = date("Y-m-d h:i:s");
+        return $objProject->save();
+    }
+
+    public function deletetype($data) {
+
+        $resut = Project_type::where('id', $data['id'])->delete();
+        if ($resut) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public function getdatatable() {
         $requestData = $_REQUEST;
         $columns = array(
