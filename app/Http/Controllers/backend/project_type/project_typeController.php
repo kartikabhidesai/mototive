@@ -51,7 +51,7 @@ class project_typeController extends Controller {
                 $return['status'] = 'error';
                 $return['message'] = 'something will be wrong.';
             }
-            echo json_encode($return);
+            return json_encode($return);
             exit;
         } else {
             return redirect('project-type');
