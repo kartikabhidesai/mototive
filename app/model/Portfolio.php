@@ -14,7 +14,7 @@ class Portfolio extends Model {
     public function getPortfoliodetails() {
 
         $result = Portfolio::select('portfolio.id', 'portfolio.name', 'portfolio.image', 'portfolio.short_description', 'project_type.type')
-                ->leftjoin('project_type','project_type.id','=','portfolio.category')
+                ->leftjoin('project_type', 'project_type.id', '=', 'portfolio.category')
                 ->get();
         return $result;
     }

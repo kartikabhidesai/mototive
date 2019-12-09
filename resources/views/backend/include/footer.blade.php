@@ -11,45 +11,45 @@
 <script>
 
 $(document).ready(function () {
-checkCookie();
+    checkCookie();
 });
 function setCookie(cname, cvalue, exdays) {
-var d = new Date();
-d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-var expires = "expires=" + d.toGMTString();
-document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 function getCookie(cname) {
-var name = cname + "=";
-var decodedCookie = decodeURIComponent(document.cookie);
-var ca = decodedCookie.split(';');
-for (var i = 0; i < ca.length; i++) {
-var c = ca[i];
-while (c.charAt(0) == ' ') {
-c = c.substring(1);
-}
-if (c.indexOf(name) == 0) {
-return c.substring(name.length, c.length);
-}
-}
-return "";
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
 
 function checkCookie() {
-var ticks = getCookie("modelopen");
-if (ticks != "") {
-ticks++;
-setCookie("modelopen", ticks, 1);
-if (ticks == "2" || ticks == "1" || ticks == "0") {
-$('#exampleModalCenter').modal();
-}
-} else {
+    var ticks = getCookie("modelopen");
+    if (ticks != "") {
+        ticks++;
+        setCookie("modelopen", ticks, 1);
+        if (ticks == "2" || ticks == "1" || ticks == "0") {
+            $('#exampleModalCenter').modal();
+        }
+    } else {
 // user = prompt("Please enter your name:", "");
-$('#exampleModalCenter').modal();
-ticks = 1;
-setCookie("modelopen", ticks, 1);
-}
+        $('#exampleModalCenter').modal();
+        ticks = 1;
+        setCookie("modelopen", ticks, 1);
+    }
 }
 </script>
 @if (!empty($pluginjs)) 
@@ -67,10 +67,12 @@ setCookie("modelopen", ticks, 1);
 
 <script>
 jQuery(document).ready(function () {
-@if (!empty($funinit))
-        @foreach ($funinit as $value)
-{{ $value }}
-@endforeach
-        @endif
-        });
+    @if (!empty($funinit))
+            @foreach ($funinit as $value)
+    {
+        {
+            $value }}
+    @endforeach
+            @endif
+});
 </script>
