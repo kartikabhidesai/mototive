@@ -17,6 +17,12 @@ class Project_type extends Model {
         return $objProject->save();
     }
 
+    public function gettype() {
+        $query = Project_type::select('type', 'id')
+                ->get();
+        return $query;
+    }
+    
     public function viewtype($id) {
         $query = Project_type::from('project_type')
                 ->where('id', $id)

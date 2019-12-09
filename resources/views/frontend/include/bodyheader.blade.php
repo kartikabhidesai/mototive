@@ -25,7 +25,7 @@ $currRoute = Route::current()->getName();
     </div>
     <div class="container">
         <nav class="navbar navbar-expand-lg"> 
-            <a class="navbar-brand" href="{{ route('dashboard') }}">
+            <a class="navbar-brand" href="{{ asset('/') }}">
                 <img class="logo_light" src="{{ url('public/frontend/assets/images/logo_white.png') }}" alt="logo" />
                 <img class="logo_dark" src="{{ url('public/frontend/assets/images/logo_dark.png') }}" alt="logo" />
                 <img class="logo_default" src="{{ url('public/frontend/assets/images/logo_dark.png') }}" alt="logo" />
@@ -34,7 +34,7 @@ $currRoute = Route::current()->getName();
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="dropdown dropdown-mega-menu">
-                        <a class="nav-link {{ ($currRoute == 'dashboard')  ? 'active' : '' }}" href="{{ route('dashboard') }}">Home</a>  
+                        <a class="nav-link {{ ($currRoute == 'home')  ? 'active' : '' }}" href="{{ asset('/') }}">Home</a>  
                     </li>
                     <li class=" dropdown-mega-menu">
                         <a class="nav-link {{ ($currRoute == 'services')  ? 'active' : '' }}" href="{{ route('services') }}">Services</a>  
@@ -46,15 +46,15 @@ $currRoute = Route::current()->getName();
                         <a class="nav-link {{ ($currRoute == 'aboutus')  ? 'active' : '' }}" href="{{ route('aboutus') }}">About Us</a>  
                     </li>
                     <li class="dropdown dropdown-mega-menu">
-                        <a class="nav-link {{ ($currRoute == 'contactus')  ? 'active' : '' }}" href="{{ route('contactus') }}">Contact Us</a>  
+                        <a class="nav-link {{ ($currRoute == 'blog')  ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>  
                     </li>
                     <li class="dropdown dropdown-mega-menu">
-                        <a class="nav-link {{ ($currRoute == 'blog')  ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>  
+                        <a class="nav-link {{ ($currRoute == 'contactus')  ? 'active' : '' }}" href="{{ route('contactus') }}">Contact Us</a>  
                     </li>
                 </ul>
             </div>
             @if($currRoute != "contactus")
-                <a href="{{ route('contactus') }}" class="btn btn-black  d-none d-sm-block" style='border-radius: 25px;'>Get Started</a>
+            <a href="{{ route('contactus') }}" class="btn btn-black  d-none d-sm-block" style='border-radius: 25px;'>Get Started</a>
             @endif
         </nav>
     </div>

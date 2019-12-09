@@ -9,7 +9,7 @@
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ asset('/') }}">Home</a></li>
                         <li class="breadcrumb-item">Features</li>
                     </ol>
                 </nav>

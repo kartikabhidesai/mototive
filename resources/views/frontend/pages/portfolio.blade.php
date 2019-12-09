@@ -10,7 +10,7 @@
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ asset('/') }}">Home</a></li>
                         <li class="breadcrumb-item">Portfolio</li>
                     </ol>
                 </nav>
@@ -23,124 +23,36 @@
         <div class="row">
             <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <div class="heading_s4 text-center">
-                    <h2>Web Projects</h2>
+                    <h2>Mobile Projects</h2>
                 </div>
             </div>
         </div>
+        @for($i = 0; $i < count($details); $i++)
+        @if($details[$i]->type == "Mobile Project")
         <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
             <div class="col-md-4 mt-3 mt-md-4">
                 <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img1.jpg') }}">
+                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/uploads/portfolio/',$details[$i]->image) }}">
                         <div class="inner">
-                            <i class="icon icon-display"></i>
-                            <h5>Responsive Design</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                            <i class="icon icon-mobile"></i>
+                            <h5>{{ $details[$i]->name }}</h5>
+                            <p>{{ $details[$i]->short_description }}</p>
                         </div>
                     </div>
                     <div class="back bg_blue">
                         <div class="inner">	
-                            <h5>Responsive Design</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img2.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-eye"></i>
-                            <h5>Retina Ready</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Retina Ready</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img3.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-equalizer2"></i>
-                            <h5>Parallax Effact</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Parallax Effact</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img4.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-embed2"></i>
-                            <h5>Html5 & Css3</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Html5 & Css3</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img5.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-lifebuoy"></i>
-                            <h5>Expert Support</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Expert Support</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img6.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-cog"></i>
-                            <h5>Easy To Customize</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Easy To Customize</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
+                            <h5>{{ $details[$i]->name }}</h5>
+                            <p>{{ $details[$i]->short_description }}</p>
+                            <a href="{{ route('portfolioreadmore', $details[$i]->id) }}" class="btn btn-outline-white">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        @endif
+        @endfor
     </div>
 </section>
-<!-- END SECTION BANNER --> 
-<!-- START SECTION PORTFOLIO -->
 <section class="cta_section_small overlay_bg3 px-0">
     <div class="container">
         <div class="row align-items-center">
@@ -159,120 +71,37 @@
         <div class="row">
             <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <div class="heading_s4 text-center">
-                    <h2>Mobile Projects</h2>
+                    <h2>Web Projects</h2>
                 </div>
             </div>
         </div>
         <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+            @for($i = 0; $i < count($details); $i++)
+            @if($details[$i]->type == "Web Project")
             <div class="col-md-4 mt-3 mt-md-4">
                 <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img1.jpg') }}">
+                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/uploads/portfolio/',$details[$i]->image) }}">
                         <div class="inner">
                             <i class="icon icon-display"></i>
-                            <h5>Responsive Design</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                            <h5>{{ $details[$i]->name }}</h5>
+                            <p>{{ $details[$i]->short_description }}</p>
                         </div>
                     </div>
                     <div class="back bg_blue">
                         <div class="inner">	
-                            <h5>Responsive Design</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
+                            <h5>{{ $details[$i]->name }}</h5>
+                            <p>{{ $details[$i]->short_description }}</p>
+                            <a href="{{ route('portfolioreadmore', $details[$i]->id) }}" class="btn btn-outline-white">Read More</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img2.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-eye"></i>
-                            <h5>Retina Ready</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Retina Ready</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img3.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-equalizer2"></i>
-                            <h5>Parallax Effact</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Parallax Effact</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img4.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-embed2"></i>
-                            <h5>Html5 & Css3</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Html5 & Css3</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img5.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-lifebuoy"></i>
-                            <h5>Expert Support</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Expert Support</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/frontend/assets/images/icon_box_img6.jpg') }}">
-                        <div class="inner">
-                            <i class="icon icon-cog"></i>
-                            <h5>Easy To Customize</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                        </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>Easy To Customize</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
-                            <a href="#" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endif
+            @endfor
         </div>
     </div>
 </section>
+<!-- END SECTION BANNER --> 
+<!-- START SECTION PORTFOLIO -->
+
 @endsection

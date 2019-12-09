@@ -11,6 +11,7 @@
     <link href="{{ url('public/backend/assets/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
     <!-- vendor css -->
     <link rel="stylesheet" href="{{ url('public/backend/assets/css/style.css') }}">
+    <link href="{{ url('public/frontend/assets/css/toastr.min.css') }}" rel="stylesheet">
     <script>
         var baseurl = "{{ asset('/') }}";
     </script>
