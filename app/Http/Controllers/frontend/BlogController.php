@@ -20,4 +20,9 @@ class BlogController extends Controller
         $data['funinit'] = array(); 
         return view('frontend.pages.blog',$data);
     }
+    
+    public function readmore(Request $request){
+        
+        print_r('hello');die();
+    }
 }

@@ -41,7 +41,7 @@
                                         <li><a href="#"><i class="ion-chatboxes"></i> 2 Comment</a></li>
                                     </ul>
                                     <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
-                                    <a href="#" class="text-capitalize">Read More</a>
+                                    <a href="{{ route('blogreadmore') }}" class="text-capitalize">Read More</a>
                                 </div>
                             </div>
                         </div>

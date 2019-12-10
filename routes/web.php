@@ -33,7 +33,10 @@ Route::match(['get', 'post'], 'portfolio', ['as' => 'portfolio', 'uses' => 'fron
 Route::match(['get', 'post'], 'portfolioreadmore/{id}', ['as' => 'portfolioreadmore', 'uses' => 'frontend\PortfolioController@readmore']);
 Route::match(['get', 'post'], 'aboutus', ['as' => 'aboutus', 'uses' => 'frontend\AboutusController@aboutus']);
 Route::match(['get', 'post'], 'contactus', ['as' => 'contactus', 'uses' => 'frontend\ContactusController@contactus']);
+
 Route::match(['get', 'post'], 'blog', ['as' => 'blog', 'uses' => 'frontend\BlogController@blog']);
+Route::match(['get', 'post'], 'blogreadmore', ['as' => 'blogreadmore', 'uses' => 'frontend\BlogController@readmore']);
+
 Route::match(['get', 'post'], 'features', ['as' => 'features', 'uses' => 'frontend\FeaturesController@features']);
  
 
@@ -60,4 +63,7 @@ Route::match(['get', 'post'], 'admin-portfolio', ['as' => 'admin-portfolio', 'us
 Route::match(['get', 'post'], 'portfolio-ajaxAction', ['as' => 'portfolio-ajaxAction', 'uses' => 'backend\portfolio\PortfolioController@ajaxAction']);
 Route::match(['get', 'post'], 'editportfolio/{id}', ['as' => 'editportfolio', 'uses' => 'backend\portfolio\PortfolioController@editportfolio']);
 Route::match(['get', 'post'], 'addportfolio', ['as' => 'addportfolio', 'uses' => 'backend\portfolio\PortfolioController@addportfolio']);
+
+//Blog
+Route::match(['get', 'post'], 'admin-blog-category', ['as' => 'admin-blog-category', 'uses' => 'backend\blog\BlogController@index']);
 });

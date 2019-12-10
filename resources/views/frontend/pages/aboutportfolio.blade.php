@@ -1,13 +1,19 @@
 @extends('frontend.layout.app')
 @section('content')
-<section class="banner_section parallax_bg overlay_bg" data-parallax-bg-image="{{ url('public/uploads/portfolio/'.$details[0]->image) }}">
-    <div class="container"><!-- STRART CONTAINER -->
-        <div class="row justify-content-center">
-            <div class="col-xl-9 col-lg-12 col-sm-12 text-center">
-                <div class="banner_content text_white">
-                    <h2 class="animation text-uppercase" data-animation="fadeInUp" data-animation-delay="0.4s">{{ $details[0]->name }}</h2>
-                    <p class="animation my-4" data-animation="fadeInUp" data-animation-delay="0.6s">READ MORE</p>
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="{{ url('public/frontend/assets/images/portfolio_signle_bg1.jpg') }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="page-title">
+                    <h1>Portfolio</h1>
                 </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="{{ asset('/') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ asset('portfolio') }}">Portfolio</a></li>
+                        <li class="breadcrumb-item">Read More</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </div>
@@ -26,10 +32,11 @@
             <div class="col-lg-4 col-md-5 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
                 <div class="bg_blue p-3 p-md-4">
                     <ul class="list_none portfolio_info_box pr_info_text_white">
-                       <li><span class="text-uppercase">Project Name</span>{{ $details[0]->name }}</li>
+                        <li><span class="text-uppercase">Project Name</span>{{ $details[0]->name }}</li>
                         <li><span class="text-uppercase">Project Technology</span>{{ $details[0]->technology }}</li>
                         <li><span class="text-uppercase">Category</span>{{ $details[0]->type }}</li>
-                        <li><a href="{{ $details[0]->livelink }}"><span class="text-uppercase">PROJECT link</span>{{ $details[0]->livelink }}</a></li>
+
+                        <li><span class="text-uppercase">PROJECT link</span>{{ substr($details[0]->livelink, strpos($details[0]->livelink, "w") + 0) }}</li>
 <!--                        <li><span class="text-uppercase">SHARE </span>
                             <ul class="list_none social_icons border_social social_white rounded_social">
                                 <li><a href="#"><i class="ion-social-facebook"></i></a></li>

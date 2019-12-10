@@ -40,13 +40,13 @@ $currRoute = Route::current()->getName();
                         <a class="nav-link {{ ($currRoute == 'services')  ? 'active' : '' }}" href="{{ route('services') }}">Services</a>  
                     </li>
                     <li class="dropdown dropdown-mega-menu">
-                        <a class="nav-link {{ ($currRoute == 'portfolio')  ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>  
+                        <a class="nav-link {{ ($currRoute == 'portfolio' || $currRoute == "portfolioreadmore" )  ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>  
                     </li>
                     <li class="dropdown dropdown-mega-menu">
                         <a class="nav-link {{ ($currRoute == 'aboutus')  ? 'active' : '' }}" href="{{ route('aboutus') }}">About Us</a>  
                     </li>
                     <li class="dropdown dropdown-mega-menu">
-                        <a class="nav-link {{ ($currRoute == 'blog')  ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>  
+                        <a class="nav-link {{ ($currRoute == 'blog' || $currRoute == "blogreadmore")  ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>  
                     </li>
                     <li class="dropdown dropdown-mega-menu">
                         <a class="nav-link {{ ($currRoute == 'contactus')  ? 'active' : '' }}" href="{{ route('contactus') }}">Contact Us</a>  
