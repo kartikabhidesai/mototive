@@ -1,7 +1,5 @@
 var Project_type = function () {
 
-
-
     var product_type_list = function () {
 
         var dataArr = {};

@@ -64,6 +64,13 @@ Route::match(['get', 'post'], 'portfolio-ajaxAction', ['as' => 'portfolio-ajaxAc
 Route::match(['get', 'post'], 'editportfolio/{id}', ['as' => 'editportfolio', 'uses' => 'backend\portfolio\PortfolioController@editportfolio']);
 Route::match(['get', 'post'], 'addportfolio', ['as' => 'addportfolio', 'uses' => 'backend\portfolio\PortfolioController@addportfolio']);
 
+//Blog Category
+Route::match(['get', 'post'], 'blog-category', ['as' => 'blog-category', 'uses' => 'backend\blog_category\BlogcategoryController@index']);
+Route::match(['get', 'post'], 'blogcategory-ajaxAction', ['as' => 'blogcategory-ajaxAction', 'uses' => 'backend\blog_category\BlogcategoryController@ajaxAction']);
+Route::match(['get', 'post'], 'editblogcategory', ['as' => 'editblogcategory', 'uses' => 'backend\blog_category\BlogcategoryController@editblogcategory']);
+
 //Blog
-Route::match(['get', 'post'], 'admin-blog-category', ['as' => 'admin-blog-category', 'uses' => 'backend\blog\BlogController@index']);
+Route::match(['get', 'post'], 'admin-blog', ['as' => 'admin-blog', 'uses' => 'backend\blog\BlogController@index']);
+Route::match(['get', 'post'], 'blog-ajaxAction', ['as' => 'blog-ajaxAction', 'uses' => 'backend\blog\BlogController@ajaxAction']);
+Route::match(['get', 'post'], 'editblog', ['as' => 'editblog', 'uses' => 'backend\blog\BlogController@editblog']);
 });

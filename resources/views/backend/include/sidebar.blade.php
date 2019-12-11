@@ -45,8 +45,11 @@ $items = Session::get('logindata');
                 <li class="nav-item {{ ($currRoute == 'admin-portfolio' || $currRoute == "addportfolio")  ? 'active' : '' }}">
                     <a href="{{ route('admin-portfolio') }}" class="nav-link "><span class="pcoded-micon"><i class="fa fa-briefcase" aria-hidden="true"></i></span><span class="pcoded-mtext">Portfolio</span></a>
                 </li>
-                <li class="nav-item {{ ($currRoute == 'admin-blog-category')  ? 'active' : '' }}">
-                    <a href="{{ route('admin-blog-category') }}" class="nav-link "><span class="pcoded-micon"><i class="fab fa-blogger"></i></span><span class="pcoded-mtext">Blog</span></a>
+                <li class="nav-item {{ ($currRoute == 'blog-category')  ? 'active' : '' }}">
+                    <a href="{{ route('blog-category') }}" class="nav-link "><span class="pcoded-micon"><i class="fa fa-list-alt" aria-hidden="true"></i></span><span class="pcoded-mtext">Blog Category</span></a>
+                </li>
+                <li class="nav-item {{ ($currRoute == 'admin-blog')  ? 'active' : '' }}">
+                    <a href="{{ route('admin-blog') }}" class="nav-link "><span class="pcoded-micon"><i class="fab fa-blogger"></i></span><span class="pcoded-mtext">Blog</span></a>
                 </li>
             </ul>
         </div>
