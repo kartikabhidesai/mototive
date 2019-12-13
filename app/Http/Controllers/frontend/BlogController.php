@@ -4,6 +4,7 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\model\Blog;
 
 class BlogController extends Controller
 {
@@ -12,6 +13,8 @@ class BlogController extends Controller
     }
     public function blog(){
         
+        $objBlog = new Blog();
+        $data['blog'] = $objBlog->viewDetails();
         $data['title'] = 'Mototive Websolution - Blog';
         $data['css'] = array();
         $data['plugincss'] = array();
@@ -21,8 +24,8 @@ class BlogController extends Controller
         return view('frontend.pages.blog',$data);
     }
     
-    public function readmore(Request $request){
+    public function readmore(Request $request, $id){
         
-        print_r('hello');die();
+        print_r($id);die();
     }
 }

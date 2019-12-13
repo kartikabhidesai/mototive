@@ -35,7 +35,7 @@ Route::match(['get', 'post'], 'aboutus', ['as' => 'aboutus', 'uses' => 'frontend
 Route::match(['get', 'post'], 'contactus', ['as' => 'contactus', 'uses' => 'frontend\ContactusController@contactus']);
 
 Route::match(['get', 'post'], 'blog', ['as' => 'blog', 'uses' => 'frontend\BlogController@blog']);
-Route::match(['get', 'post'], 'blogreadmore', ['as' => 'blogreadmore', 'uses' => 'frontend\BlogController@readmore']);
+Route::match(['get', 'post'], 'blogreadmore/{id}', ['as' => 'blogreadmore', 'uses' => 'frontend\BlogController@readmore']);
 
 Route::match(['get', 'post'], 'features', ['as' => 'features', 'uses' => 'frontend\FeaturesController@features']);
  
