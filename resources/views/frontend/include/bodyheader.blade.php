@@ -27,7 +27,7 @@ $currRoute = Route::current()->getName();
     <div class="container p-t-0">
         <nav class="navbar navbar-expand-lg"> 
             <a class="navbar-brand" href="{{ asset('/') }}">
-                <img style="height: 125px;" class="logo_light" src="{{ url('public/frontend/assets/images/logo.png') }}" alt="logo" />
+                <img style="height: 125px;" class="logo_light" src="{{ url('public/frontend/assets/images/logo_white.png') }}" alt="logo" />
                 <img style="height: 125px;" class="logo_dark" src="{{ url('public/frontend/assets/images/logo.png') }}" alt="logo" />
                 <img style="height: 125px;" class="logo_default" src="{{ url('public/frontend/assets/images/logo.png') }}" alt="logo" />
             </a>
