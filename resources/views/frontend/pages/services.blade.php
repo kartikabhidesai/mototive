@@ -27,7 +27,7 @@
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-4 text-center">
                 <div class="icon_box icon_box_style_5">
                     <div class="box_icon mb-3">	
-                        <img src="{{ url('public/frontend/assets/images/service_img1.jpg') }}" alt="service_img1"/>
+                        <img src="{{ url('public/frontend/assets/images/webservices.jpg') }}" alt="service_img1"/>
                     </div>
                     <div class="icon_box_content">
                         <h5>Web Services</h5>
@@ -39,11 +39,11 @@
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-4 text-center">
                 <div class="icon_box icon_box_style_5">
                     <div class="box_icon mb-3">	
-                        <img src="{{ url('public/frontend/assets/images/service_img2.jpg') }}" alt="service_img2"/>
+                        <img src="{{ url('public/frontend/assets/images/android.jpg') }}" alt="service_img2"/>
                     </div>
                     <div class="icon_box_content">
                         <h5>Android app development</h5>
-                        <p>Our company provides android application development, shopping cart integration along with domain registration.</p>
+                        <p>Our company provides android application development, shopping cart integration along with domain registration. Proper layout with design.</p>
                         
                     </div>
                 </div>
@@ -51,7 +51,7 @@
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-4 text-center">
                 <div class="icon_box icon_box_style_5">
                     <div class="box_icon mb-3">	
-                        <img src="{{ url('public/frontend/assets/images/service_img3.jpg') }}" alt="service_img3"/>
+                        <img src="{{ url('public/frontend/assets/images/apple.jpg') }}" alt="service_img3"/>
                     </div>
                     <div class="icon_box_content">
                         <h5>IOS app development</h5>
@@ -63,7 +63,7 @@
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-4 text-center">
                 <div class="icon_box icon_box_style_5">
                     <div class="box_icon mb-3">	
-                        <img src="{{ url('public/frontend/assets/images/service_img3.jpg') }}" alt="service_img3"/>
+                        <img src="{{ url('public/frontend/assets/images/html_java_laravel.jpg') }}" alt="service_img3"/>
                     </div>
                     <div class="icon_box_content">
                         <h5>Html / Css / Java / PHP / Laravel</h5>
@@ -75,11 +75,11 @@
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-4 text-center">
                 <div class="icon_box icon_box_style_5">
                     <div class="box_icon mb-3">	
-                        <img src="{{ url('public/frontend/assets/images/service_img3.jpg') }}" alt="service_img3"/>
+                        <img style="height: 186px" src="{{ url('public/frontend/assets/images/expert_support.jpg') }}" alt="service_img3"/>
                     </div>
                     <div class="icon_box_content">
                         <h5>Expert Support</h5>
-                        <p>MOTOTIVE Expert support help businesses and individuals use technology to keep their Businsess running smoothly.</p>
+                        <p>MOTOTIVE Expert support help businesses and individuals use technology to keep their Businsess running smoothly. Let us know if you need any further assistance.</p>
                         
                     </div>
                 </div>
@@ -87,11 +87,11 @@
             <div class="col-md-4 col-sm-6 mb-lg-5 mb-4 text-center">
                 <div class="icon_box icon_box_style_5">
                     <div class="box_icon mb-3">	
-                        <img src="{{ url('public/frontend/assets/images/service_img3.jpg') }}" alt="service_img3"/>
+                        <img style="height: 186px" src="{{ url('public/frontend/assets/images/easy_customize.jpg') }}" alt="service_img3"/>
                     </div>
                     <div class="icon_box_content">
                         <h5>Easy To Customize</h5>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+                        <p>MOTOTIVE WEB SOLUTION give easy way to you for customize your whole web site, Application, program and give transparent output.</p>
                         
                     </div>
                 </div>

@@ -5,7 +5,7 @@
     <!-- SITE TITLE -->
     <title>{{ $title }}</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url('public/frontend/assets/images/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('public/frontend/assets/images/fevicon.png') }}">
     <!-- Animation CSS -->
     <link rel="stylesheet" href="{{ url('public/frontend/assets/css/animate.css') }}">	
     <!-- Latest Bootstrap min CSS -->

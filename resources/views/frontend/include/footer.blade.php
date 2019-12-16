@@ -48,3 +48,16 @@ jQuery(document).ready(function () {
             @endif
 });
 </script>
+<script> 
+$.ajax({
+    type: "POST",
+    headers: {
+        'X-CSRF-TOKEN': $('input[name="_token"]').val(),
+    },
+    url: baseurl + "blog-footer",
+    success: function (data) {
+        
+        $(".blogfooter").html(data);
+    }
+});
+</script>

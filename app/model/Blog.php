@@ -85,6 +85,15 @@ class Blog extends Model {
                 ->get();
         return $query;
     }
+    
+    public function viewDetailsFooter() {
+        $query = Blog::from('blog')
+                ->select('id', 'image', 'title', 'blog.created_at')
+                ->orderBy('id', 'DESC')
+                ->take(3)
+                ->get();
+        return $query;
+    }
 
     public function getdatatable() {
 

@@ -24,12 +24,12 @@ $currRoute = Route::current()->getName();
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container p-t-0">
         <nav class="navbar navbar-expand-lg"> 
             <a class="navbar-brand" href="{{ asset('/') }}">
-                <img class="logo_light" src="{{ url('public/frontend/assets/images/logo_white.png') }}" alt="logo" />
-                <img class="logo_dark" src="{{ url('public/frontend/assets/images/logo_dark.png') }}" alt="logo" />
-                <img class="logo_default" src="{{ url('public/frontend/assets/images/logo_dark.png') }}" alt="logo" />
+                <img style="height: 125px;" class="logo_light" src="{{ url('public/frontend/assets/images/logo.png') }}" alt="logo" />
+                <img style="height: 125px;" class="logo_dark" src="{{ url('public/frontend/assets/images/logo.png') }}" alt="logo" />
+                <img style="height: 125px;" class="logo_default" src="{{ url('public/frontend/assets/images/logo.png') }}" alt="logo" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">

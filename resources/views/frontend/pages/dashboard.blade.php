@@ -518,7 +518,7 @@
 <!-- END SECTION CALL TO ACTION -->
 
 <!-- START SECTION BLOG -->
-<section>
+<!--<section>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -595,7 +595,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!-- END SECTION BLOG -->
 
 <!-- START SECTION CLIENT LOGO -->

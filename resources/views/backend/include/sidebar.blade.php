@@ -17,7 +17,7 @@ $items = Session::get('logindata');
                 <div class="main-menu-header">
                     <img class="img-radius" src="{{ url('public/backend/assets/images/user/avatar-2.jpg')}}" alt="User-Profile-Image">
                     <div class="user-details">
-                        <div id="more-details"> <i class="fa fa-caret-down"></i></div>
+                        <div id="more-details">ADMIN <i class="fa fa-caret-down"></i></div>
                     </div>
                 </div>
                 <div class="collapse" id="nav-user-link">
