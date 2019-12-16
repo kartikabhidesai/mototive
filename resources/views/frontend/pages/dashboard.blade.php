@@ -262,10 +262,12 @@
             <div class="col-md-12 text-center animation" data-animation="fadeInUp" data-animation-delay="0.1s">
                 <ul class="list_none portfolio_filter filter_tab1">
                     <li><a href="#" class="current" data-filter="*">all</a></li>
-                    <li><a href="#" data-filter=".brands">Brands</a></li>
-                    <li><a href="#" data-filter=".design">Design</a></li>
-                    <li><a href="#" data-filter=".web">Web</a></li>
-                    <li><a href="#" data-filter=".adv">Advertising</a></li>
+                    @foreach($type as $result) 
+                    <li><a href="#" data-filter="{{ '.'.substr($result->type, 0, strpos($result->type, ' ')) }}">{{ $result->type }}</a></li>
+                    @endforeach
+                    <!--                    <li><a href="#" data-filter=".design">Design</a></li>
+                                        <li><a href="#" data-filter=".web">Web</a></li>
+                                        <li><a href="#" data-filter=".adv">Advertising</a></li>-->
                 </ul>
             </div>
         </div>
@@ -274,153 +276,154 @@
                 <ul class="portfolio_container gutter_small work_col4 portfolio_gallery portfolio_style1">
                     <li class="grid-sizer"></li>
                     <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item design web">
+                    @foreach($details as $value)
+                    <li class="portfolio-item {{ substr($value->type, 0, strpos($value->type, ' ')) }}">
                         <div class="portfolio_item">
                             <a href="#" class="image_link">
-                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small1_360X240.jpg') }}" alt="image">
+                                <img src="{{ url('public/uploads/portfolio/'.$value->image) }}" alt="image">
                             </a>
                             <div class="portfolio_content">
                                 <div class="link_container">
-                                    <a href="assets/images/portfolio_item1.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                    <a href="#"><i class="ion-plus"></i></a>
+                                    <a href="{{ url('public/uploads/portfolio/'.$value->image) }}" class="image_popup"><i class="ion-image"></i></a>
                                 </div>
-                                <h5><a href="#">Website Design</a></h5>
-                                <p>It's a long established fact that a reader will be readable content of a page.</p>
+                                <h5><a href="#">{{ $value->name }}</a></h5>
+                                <p>{{ $value->short_description }}</p>
                             </div>
                         </div>
                     </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands web adv">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small2_360X240.jpg') }}" alt="image">
-                            </a>
-                            <div class="portfolio_content">
-                                <div class="link_container">
-                                    <a href="http://www.youtube.com/watch?v=7e90gBu4pas" class="video_popup"><i class="ion-ios-play"></i></a>
-                                    <a href="#"><i class="ion-plus"></i></a>
-                                </div>
-                                <h5><a href="#">Website Design</a></h5>
-                                <p>There are many variations of available, but the majority have suffered alteration</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands design">
-                        <div class="portfolio_item">
-                            <div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000">
-                                <a href="#" class="image_link">
-                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small3_360X240.jpg') }}" alt="image">
-                                </a>
-                                <a href="#" class="image_link">
-                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small23_360X240.jpg') }}" alt="image">
-                                </a>
-                            </div>
-                            <div class="portfolio_content">
-                                <div class="link_container">
-                                    <a href="assets/images/portfolio_item3.jpg" class="image_popup"><i class="ion-images"></i></a>
-                                    <a href="assets/images/portfolio_item23.jpg" class="image_popup d-none"></a>
-                                    <a href="#"><i class="ion-plus"></i></a>
-                                </div>
-                                <h5><a href="#">Website Design</a></h5>
-                                <p>making this the first true generator on the Internet. It uses a dictionary</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands design web adv">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small4_360X240.jpg') }}" alt="image">
-                            </a>
-                            <div class="portfolio_content">
-                                <div class="link_container">
-                                    <a href="assets/images/portfolio_item4.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                    <a href="#"><i class="ion-plus"></i></a>
-                                </div>
-                                <h5><a href="#">Website Design</a></h5>
-                                <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands adv">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small5_360X240.jpg') }}" alt="image">
-                            </a>
-                            <div class="portfolio_content">
-                                <div class="link_container">
-                                    <a href="https://vimeo.com/7449107" class="video_popup"><i class="ion-ios-play"></i></a>
-                                    <a href="#"><i class="ion-plus"></i></a>
-                                </div>
-                                <h5><a href="#">Website Design</a></h5>
-                                <p>Nam libero tempore cum soluta nobis eligendi optio nihil impedit quo minus</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands web">
-                        <div class="portfolio_item">
-                            <div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3500">
-                                <a href="#" class="image_link">
-                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small7_360X240.jpg') }}" alt="image">
-                                </a>
-                                <a href="#" class="image_link">
-                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small24_360X240.jpg') }}" alt="image">
-                                </a>
-                            </div>
-                            <div class="portfolio_content">
-                                <div class="link_container">
-                                    <a href="assets/images/portfolio_item7.jpg" class="image_popup"><i class="ion-images"></i></a>
-                                    <a href="assets/images/portfolio_item24.jpg" class="image_popup d-none"><i class="ion-image"></i></a>
-                                    <a href="#"><i class="ion-plus"></i></a>
-                                </div>
-                                <h5><a href="#">Website Design</a></h5>
-                                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands design web adv">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small6_360X240.jpg') }}" alt="image">
-                            </a>
-                            <div class="portfolio_content">
-                                <div class="link_container">
-                                    <a href="assets/images/portfolio_item6.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                    <a href="#"><i class="ion-plus"></i></a>
-                                </div>
-                                <h5><a href="#">Website Design</a></h5>
-                                <p>which is the same as saying through shrinking from toil and pain.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
-                    <!-- START PORTFOLIO ITEM -->
-                    <li class="portfolio-item brands design web adv">
-                        <div class="portfolio_item">
-                            <a href="#" class="image_link">
-                                <img src="{{ url('public/frontend/assets/images/portfolio_item_small8_360X240.jpg') }}" alt="image">
-                            </a>
-                            <div class="portfolio_content">
-                                <div class="link_container">
-                                    <a href="assets/images/portfolio_item8.jpg" class="image_popup"><i class="ion-image"></i></a>
-                                    <a href="#"><i class="ion-plus"></i></a>
-                                </div>
-                                <h5><a href="#">Website Design</a></h5>
-                                <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit molestiae consequatur</p>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- END PORTFOLIO ITEM -->
+                    @endforeach
+                    <!--                     END PORTFOLIO ITEM 
+                                         START PORTFOLIO ITEM 
+                                        <li class="portfolio-item brands web adv">
+                                            <div class="portfolio_item">
+                                                <a href="#" class="image_link">
+                                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small2_360X240.jpg') }}" alt="image">
+                                                </a>
+                                                <div class="portfolio_content">
+                                                    <div class="link_container">
+                                                        <a href="http://www.youtube.com/watch?v=7e90gBu4pas" class="video_popup"><i class="ion-ios-play"></i></a>
+                                                        <a href="#"><i class="ion-plus"></i></a>
+                                                    </div>
+                                                    <h5><a href="#">Website Design</a></h5>
+                                                    <p>There are many variations of available, but the majority have suffered alteration</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         END PORTFOLIO ITEM 
+                                         START PORTFOLIO ITEM 
+                                        <li class="portfolio-item brands design">
+                                            <div class="portfolio_item">
+                                                <div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3000">
+                                                    <a href="#" class="image_link">
+                                                        <img src="{{ url('public/frontend/assets/images/portfolio_item_small3_360X240.jpg') }}" alt="image">
+                                                    </a>
+                                                    <a href="#" class="image_link">
+                                                        <img src="{{ url('public/frontend/assets/images/portfolio_item_small23_360X240.jpg') }}" alt="image">
+                                                    </a>
+                                                </div>
+                                                <div class="portfolio_content">
+                                                    <div class="link_container">
+                                                        <a href="assets/images/portfolio_item3.jpg" class="image_popup"><i class="ion-images"></i></a>
+                                                        <a href="assets/images/portfolio_item23.jpg" class="image_popup d-none"></a>
+                                                        <a href="#"><i class="ion-plus"></i></a>
+                                                    </div>
+                                                    <h5><a href="#">Website Design</a></h5>
+                                                    <p>making this the first true generator on the Internet. It uses a dictionary</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         END PORTFOLIO ITEM 
+                                         START PORTFOLIO ITEM 
+                                        <li class="portfolio-item brands design web adv">
+                                            <div class="portfolio_item">
+                                                <a href="#" class="image_link">
+                                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small4_360X240.jpg') }}" alt="image">
+                                                </a>
+                                                <div class="portfolio_content">
+                                                    <div class="link_container">
+                                                        <a href="assets/images/portfolio_item4.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                                        <a href="#"><i class="ion-plus"></i></a>
+                                                    </div>
+                                                    <h5><a href="#">Website Design</a></h5>
+                                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         END PORTFOLIO ITEM 
+                                         START PORTFOLIO ITEM 
+                                        <li class="portfolio-item brands adv">
+                                            <div class="portfolio_item">
+                                                <a href="#" class="image_link">
+                                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small5_360X240.jpg') }}" alt="image">
+                                                </a>
+                                                <div class="portfolio_content">
+                                                    <div class="link_container">
+                                                        <a href="https://vimeo.com/7449107" class="video_popup"><i class="ion-ios-play"></i></a>
+                                                        <a href="#"><i class="ion-plus"></i></a>
+                                                    </div>
+                                                    <h5><a href="#">Website Design</a></h5>
+                                                    <p>Nam libero tempore cum soluta nobis eligendi optio nihil impedit quo minus</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         END PORTFOLIO ITEM 
+                                         START PORTFOLIO ITEM 
+                                        <li class="portfolio-item brands web">
+                                            <div class="portfolio_item">
+                                                <div class="portfolio_slider owl-carousel owl-theme dots_white" data-autoplay="true" data-loop="true" data-animate-in="fadeIn" data-animate-out="fadeOut" data-autoplay-timeout="3500">
+                                                    <a href="#" class="image_link">
+                                                        <img src="{{ url('public/frontend/assets/images/portfolio_item_small7_360X240.jpg') }}" alt="image">
+                                                    </a>
+                                                    <a href="#" class="image_link">
+                                                        <img src="{{ url('public/frontend/assets/images/portfolio_item_small24_360X240.jpg') }}" alt="image">
+                                                    </a>
+                                                </div>
+                                                <div class="portfolio_content">
+                                                    <div class="link_container">
+                                                        <a href="assets/images/portfolio_item7.jpg" class="image_popup"><i class="ion-images"></i></a>
+                                                        <a href="assets/images/portfolio_item24.jpg" class="image_popup d-none"><i class="ion-image"></i></a>
+                                                        <a href="#"><i class="ion-plus"></i></a>
+                                                    </div>
+                                                    <h5><a href="#">Website Design</a></h5>
+                                                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum saepe eveniet</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         END PORTFOLIO ITEM 
+                                         START PORTFOLIO ITEM 
+                                        <li class="portfolio-item brands design web adv">
+                                            <div class="portfolio_item">
+                                                <a href="#" class="image_link">
+                                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small6_360X240.jpg') }}" alt="image">
+                                                </a>
+                                                <div class="portfolio_content">
+                                                    <div class="link_container">
+                                                        <a href="assets/images/portfolio_item6.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                                        <a href="#"><i class="ion-plus"></i></a>
+                                                    </div>
+                                                    <h5><a href="#">Website Design</a></h5>
+                                                    <p>which is the same as saying through shrinking from toil and pain.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         END PORTFOLIO ITEM 
+                                         START PORTFOLIO ITEM 
+                                        <li class="portfolio-item brands design web adv">
+                                            <div class="portfolio_item">
+                                                <a href="#" class="image_link">
+                                                    <img src="{{ url('public/frontend/assets/images/portfolio_item_small8_360X240.jpg') }}" alt="image">
+                                                </a>
+                                                <div class="portfolio_content">
+                                                    <div class="link_container">
+                                                        <a href="assets/images/portfolio_item8.jpg" class="image_popup"><i class="ion-image"></i></a>
+                                                        <a href="#"><i class="ion-plus"></i></a>
+                                                    </div>
+                                                    <h5><a href="#">Website Design</a></h5>
+                                                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit molestiae consequatur</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         END PORTFOLIO ITEM -->
                 </ul>
             </div>
         </div>

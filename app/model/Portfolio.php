@@ -18,7 +18,7 @@ class Portfolio extends Model {
                 ->get();
         return $result;
     }
-
+    
     public function getPortfolio($request, $id) {
 
         $result = Portfolio::select('portfolio.id', 'portfolio.name', 'portfolio.image', 'portfolio.technology', 'portfolio.livelink', 'portfolio.short_description', 'portfolio.description', 'portfolio.category', 'portfolio_image.image_name')

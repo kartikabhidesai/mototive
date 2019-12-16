@@ -28,7 +28,7 @@
                     <ul class="list_none widget_links">
                         <li><a href="{{ route('aboutus') }}">About Us</a></li>
                         <li><a href="{{ route('features') }}">Features</a></li>
-                        <li><a href="{{ route('contactus') }}">Support center</a></li>
+                        <li><a href="{{ route('services') }}">Service</a></li>
                         <li><a href="{{ route('contactus') }}">Contact Us</a></li>
                     </ul>
                 </div>

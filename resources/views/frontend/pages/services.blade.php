@@ -91,7 +91,7 @@
                     </div>
                     <div class="icon_box_content">
                         <h5>Easy To Customize</h5>
-                        <p>MOTOTIVE WEB SOLUTION give easy way to you for customize your whole web site, Application, program and give transparent output.</p>
+                        <p>We provides easy customization on web services, android application, designing and ios application. Depending on client's demand.</p>
                         
                     </div>
                 </div>

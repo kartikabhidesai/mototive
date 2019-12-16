@@ -27,14 +27,14 @@
                 </div>
             </div>
         </div>
-        @for($i = 0; $i < count($details); $i++)
-        @if($details[$i]->type == "Mobile Project")
         <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
+            @for($i = 0; $i < count($details); $i++)
+            @if($details[$i]->type == "Mobile Project")
             <div class="col-md-4 mt-3 mt-md-4">
                 <div class="flip_box text_white">
                     <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/uploads/portfolio/',$details[$i]->image) }}">
                         <div class="inner">
-                            <i class="icon icon-mobile"></i>
+                            <i class="icon icon-display"></i>
                             <h5>{{ $details[$i]->name }}</h5>
                             <p>{{ $details[$i]->short_description }}</p>
                         </div>
@@ -48,9 +48,9 @@
                     </div>
                 </div>
             </div>
+            @endif
+            @endfor
         </div>
-        @endif
-        @endfor
     </div>
 </section>
 <section class="cta_section_small overlay_bg3 px-0">
