@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
-    <link rel="icon" href="{{ url('public/backend/assets/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('public/frontend/assets/images/fevicon.png') }}" sizes="16x16">
     <link href="{{ url('public/backend/assets/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
     <!-- vendor css -->
     <link rel="stylesheet" href="{{ url('public/backend/assets/css/style.css') }}">
