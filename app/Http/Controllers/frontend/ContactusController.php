@@ -5,24 +5,28 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\model\Inquiry;
+use App\model\SendSMS;
 
-class ContactusController extends Controller
-{
+
+class ContactusController extends Controller {
+
     function __construct() {
-       
-    }
-    public function contactus(Request $request){
         
-        if($request->isMethod('post')){
-            
+    }
+
+    public function contactus(Request $request) {
+
+        if ($request->isMethod('post')) {
+
             $objInquiry = new Inquiry();
             $result = $objInquiry->contactus($request);
-            if($result){
-                
+            $objSendSms = new SendSMS();
+            $sendSMS = $objSendSms->sendMailltesting($request);
+            if ($result) {
                 $return['status'] = 'success';
                 $return['message'] = 'Thanks for contact us. We will get you soon...';
                 $return['redirect'] = route('contactus');
-            }else{
+            } else {
                 $return['status'] = 'error';
                 $return['message'] = 'Category already exist.';
             }
@@ -34,7 +38,8 @@ class ContactusController extends Controller
         $data['plugincss'] = array();
         $data['pluginjs'] = array('jquery.validate.min.js');
         $data['js'] = array('ajaxfileupload.js', 'jquery.form.min.js', 'contactus.js');
-        $data['funinit'] = array('Contactus.init()'); 
-        return view('frontend.pages.contactus',$data);
+        $data['funinit'] = array('Contactus.init()');
+        return view('frontend.pages.contactus', $data);
     }
+
 }
