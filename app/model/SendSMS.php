@@ -13,7 +13,7 @@ class SendSMS extends Model {
         $mailData['subject'] = 'From Mototive Web Solution Contact Us';
         $mailData['attachment'] = array();
         $mailData['template'] = "email.contactus";
-        $mailData['mailto'] = 'mandaliyabansi123@gmail.com';
+        $mailData['mailto'] = 'mahendrajavandhra@gmail.com';
         $sendMail = new Sendmail;
         return $sendMail->sendSMTPMail($mailData);
     }
