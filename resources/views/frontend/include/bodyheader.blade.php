@@ -14,11 +14,10 @@ $currRoute = Route::current()->getName();
                 </div>
                 <div class="col-md-4">
                     <ul class="list_none social_icons text-center border_social rounded_social social_white  text-md-right mt-2 mt-md-0">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/mototive.websolution.73"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/MototiveW"><i class="ion-social-twitter"></i></a></li>
                         <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#"><i class="ion-social-youtube-outline"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        <li><a href="www.linkedin.com/in/mototive-web-solution"><i class="ion-social-linkedin-outline"></i></a></li>
                     </ul>
                 </div>
             </div>
