@@ -47,6 +47,12 @@ Route::match(['get', 'post'], 'blogreadmore/{id}', ['as' => 'blogreadmore', 'use
 
 Route::match(['get', 'post'], 'features', ['as' => 'features', 'uses' => 'frontend\FeaturesController@features']);
 
+//Terms and Condition
+Route::match(['get', 'post'], 'terms', ['as' => 'terms', 'uses' => 'frontend\TermsController@terms']);
+
+//Privacy Policy
+Route::match(['get', 'post'], 'policy', ['as' => 'policy', 'uses' => 'frontend\PolicyController@policy']);
+
 
 Route::match(['get', 'post'], 'admin', ['as' => 'admin', 'uses' => 'backend\LoginController@login']);
 Route::match(['get', 'post'], 'createPassword', ['as' => 'createPassword', 'uses' => 'backend\LoginController@createPassword']);

@@ -67,8 +67,8 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="list_none footer_link text-center text-md-right">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="{{ route('policy') }}">Privacy Policy</a></li>
+                        <li><a href="{{ route('terms') }}">Terms & Conditions</a></li>
                     </ul>
                 </div>
             </div>
