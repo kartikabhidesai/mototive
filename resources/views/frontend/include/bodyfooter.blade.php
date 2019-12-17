@@ -50,10 +50,10 @@
                     </div>
                     <h6 class="widget_title">Follow Us</h6>
                     <ul class="list_none footer_social">
-                        <li><a href="https://www.facebook.com/mototive.websolution.73"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/MototiveW"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="www.linkedin.com/in/mototive-web-solution"><i class="ion-social-linkedin-outline"></i></a></li>
+                         <li><a target="_blank" href="https://www.facebook.com/mototive.websolution.73"><i class="ion-social-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/MototiveW"><i class="ion-social-twitter"></i></a></li>
+                        <li><a  href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/mototive-web-solution/"><i class="ion-social-linkedin-outline"></i></a></li>
                     </ul>
                 </div>
             </div>
