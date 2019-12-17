@@ -32,7 +32,7 @@
                     <div class="icon_box_content">
                         <h5>Web Services</h5>
                         <p>Web services is a standardized way or medium to propagate communication between the client and server applications on the world wide web.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     <div class="icon_box_content">
                         <h5>Android app development</h5>
                         <p>Our company provides android application development, shopping cart integration along with domain registration. Proper layout with design.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                     <div class="icon_box_content">
                         <h5>IOS app development</h5>
                         <p>Manage critical business processes with ease. Integrate seamlessly with other apps. Gain freedom from buggy, poorly coded apps.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                     <div class="icon_box_content">
                         <h5>Html / Css / Java / PHP / Laravel</h5>
                         <p>Responsive Website Development. Bootstrap Advance Java Script / Angular JS Development. Client Communication.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                     <div class="icon_box_content">
                         <h5>Expert Support</h5>
                         <p>MOTOTIVE Expert support help businesses and individuals use technology to keep their Businsess running smoothly. Let us know if you need any further assistance.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                     <div class="icon_box_content">
                         <h5>Easy To Customize</h5>
                         <p>We provides easy customization on web services, android application, designing and ios application. Depending on client's demand.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -129,19 +129,20 @@
             </div>
             <div class="col-md-6 col-sm-12 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
                 <div class="heading_s3"> 
-                    <h3>Showcase your services in a stunning way!</h3>
+                    <h3>Services of Mototive Web Solution</h3>
                 </div>
-                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
+                <p>Mototive Web Solution develop Mobile Apps and Web development company based in India.We have knowledge in mobile apps development, web services, SEO, UI/UX design</p>
                 <div class="list_style_4 color_blue mb-3">
                     <ul>
-                        <li>Deep Customization Process</li>
-                        <li>Technologies And Innovations consultant</li>
-                        <li>Secured Transactions consultant</li>
-                        <li>Unique Sales Methodoligies</li>
+                        <li>Web Services</li>
+                        <li>Android app development </li>
+                        <li>IOS app development</li>
+                        <li>SEO specialist</li>
+                        <li>UI / UX design</li>
+                        <li>SEO specialist</li>
+                        <li>Expert Support</li>
                     </ul>
                 </div>
-                <a href="#" class="btn btn-black">Read More</a>
             </div>
         </div>
     </div>
