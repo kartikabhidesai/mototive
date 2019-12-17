@@ -9,7 +9,7 @@ $currRoute = Route::current()->getName();
                     <ul class="contact_detail list_none text-center text-md-left">
                         <li><i class="ti-mobile"></i>+91 88666 20260</li>
                         <li><i class="ti-email"></i> info@mototivewebsolution.com</li>
-                        <li><i class="ti-skype"></i> Skype ID</li>
+                        <li><i class="ti-skype"></i> mototive Websolution</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -17,7 +17,7 @@ $currRoute = Route::current()->getName();
                         <li><a href="https://www.facebook.com/mototive.websolution.73"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="https://twitter.com/MototiveW"><i class="ion-social-twitter"></i></a></li>
                         <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="www.linkedin.com/in/mototive-web-solution"><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mototive-web-solution/"><i class="ion-social-linkedin-outline"></i></a></li>
                     </ul>
                 </div>
             </div>
