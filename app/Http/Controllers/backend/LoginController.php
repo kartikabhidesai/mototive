@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\Hash;
 use Session;
+use App\model\SendSMS;
 
 class LoginController extends Controller {
 
@@ -74,6 +75,12 @@ class LoginController extends Controller {
         Auth::guard('admin')->logout();
         Auth::guard('user')->logout();
         Session::forget('logindata');
+    }
+
+    public function testingmail(Request $request){
+
+        $objSendSms = new SendSMS();
+        $sendSMS = $objSendSms->sendMailltesting($request);
     }
 
     public function createPassword() {

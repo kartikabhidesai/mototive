@@ -30,7 +30,7 @@ Route::get('clear', function() {
 });
 
 //testing email
-Route::match(['get', 'post'], 'testingmail', ['as' => 'testingmail', 'uses' => 'LoginController@testingmail']);
+Route::match(['get', 'post'], 'testingmail', ['as' => 'testingmail', 'uses' => 'backend\LoginController@testingmail']);
 
 //slider
 
