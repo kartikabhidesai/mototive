@@ -82,7 +82,7 @@ class Blog extends Model {
     public function viewDetails() {
         $query = Blog::from('blog')
                 ->select('blog.id', 'blog.image', 'blog.title', 'blog.author', 'blog.content', 'blog.category', 'blog.created_at')
-                ->get();
+                ->paginate(1);
         return $query;
     }
     
