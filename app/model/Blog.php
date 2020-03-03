@@ -68,6 +68,14 @@ class Blog extends Model {
                 ->get();
         return $query[0];
     }
+    
+    public function viewreadmoreblog($id) {
+        $query = Blog::from('blog')
+                ->select('blog.id', 'blog.image', 'blog.title', 'blog.author', 'blog.content', 'blog.category')
+                ->where('blog.id', $id)
+                ->get();
+        return $query;
+    }
 
     public function deleteblog($data) {
 

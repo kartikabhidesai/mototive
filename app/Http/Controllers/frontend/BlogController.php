@@ -27,8 +27,15 @@ class BlogController extends Controller {
 
     public function readmore(Request $request, $id) {
 
-        print_r($id);
-        die();
+        $objBlog = new Blog();
+        $data['blog'] = $objBlog->viewreadmoreblog($id);
+        $data['title'] = 'Mototive Websolution - Blog';
+        $data['css'] = array();
+        $data['plugincss'] = array();
+        $data['pluginjs'] = array();
+        $data['js'] = array();
+        $data['funinit'] = array();
+        return view('frontend.pages.read_more_blog', $data);
     }
 
     public function blog_footer(Request $request) {
