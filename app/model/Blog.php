@@ -71,7 +71,7 @@ class Blog extends Model {
     
     public function viewreadmoreblog($id) {
         $query = Blog::from('blog')
-                ->select('blog.id', 'blog.image', 'blog.title', 'blog.author', 'blog.content', 'blog.category')
+                ->select('blog.id', 'blog.image', 'blog.title', 'blog.author', 'blog.content', 'blog.category','blog.created_at')
                 ->where('blog.id', $id)
                 ->get();
         return $query;

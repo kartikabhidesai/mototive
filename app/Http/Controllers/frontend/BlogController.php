@@ -5,6 +5,7 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\model\Blog;
+use App\model\Blog_category;
 
 class BlogController extends Controller {
 
@@ -29,6 +30,10 @@ class BlogController extends Controller {
 
         $objBlog = new Blog();
         $data['blog'] = $objBlog->viewreadmoreblog($id);
+        
+        $obj_Blog_category = new Blog_category();
+        $data['obj_Blog_category'] = $obj_Blog_category->viewblogcategory();
+        
         $data['title'] = 'Mototive Websolution - Blog';
         $data['css'] = array();
         $data['plugincss'] = array();
