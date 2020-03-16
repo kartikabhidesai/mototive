@@ -63,7 +63,7 @@
                 <ul class="list_none carousel_slide1 owl-carousel owl-theme" data-autoheight="true" data-margin="15" data-dots="false" data-nav="true" data-loop="true" data-autoplay-timeout="3000">
                     @for($i = 0; $i < count($image); $i++ )
                     <li>
-                        <img height="500px" src="{{ url('public/uploads/portfolio/'.$details[$i]->image_name) }}" alt="image">
+                        <img height="500px" src="{{ url('public/uploads/portfolio/'.$image[$i]->image_name) }}" alt="image">
                     </li>
                     @endfor
                 </ul>
