@@ -102,7 +102,7 @@ class Blog extends Model {
                 ->get();
         return $query;
     }
-
+    
     public function getdatatable() {
 
         $requestData = $_REQUEST;
