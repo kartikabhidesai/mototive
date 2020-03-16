@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\model\Portfolio;
 use App\model\Project_type;
+use App\model\Portfolio_image;
 
 class PortfolioController extends Controller
 {
@@ -33,6 +34,10 @@ class PortfolioController extends Controller
         
         $objPortfolio = new Portfolio();
         $data['details'] = $objPortfolio->readmorePortfoliodetails($request, $id);
+        
+        $objPortfolio = new Portfolio_image();
+        $data['image'] = $objPortfolio->readmorePortfolioimagedetails($request, $id);
+        
         $data['title'] = 'Mototive Websolution - Portfolio';
         $data['css'] = array();
         $data['plugincss'] = array();

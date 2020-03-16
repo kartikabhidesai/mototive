@@ -26,6 +26,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-7 mb-4 mb-md-0 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <h5>{{ $details[0]->short_description }}</h5>
+                <img height="300px" src="{{ url('public/uploads/portfolio/'.$details[0]->image_name) }}" alt="image">
                 <p>{{ $details[0]->description }}</p>
                 <a href="{{ $details[0]->livelink }}" class="btn btn-outline-black btn-sm" target="_blank">Launch Website</a>
             </div>
@@ -60,7 +61,7 @@
         <div class="row">	
             <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <ul class="list_none carousel_slide1 owl-carousel owl-theme" data-autoheight="true" data-margin="15" data-dots="false" data-nav="true" data-loop="true" data-autoplay-timeout="3000">
-                    @for($i = 0; $i < count($details); $i++ )
+                    @for($i = 0; $i < count($image); $i++ )
                     <li>
                         <img height="500px" src="{{ url('public/uploads/portfolio/'.$details[$i]->image_name) }}" alt="image">
                     </li>
