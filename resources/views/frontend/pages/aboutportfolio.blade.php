@@ -27,7 +27,7 @@
             <div class="col-lg-8 col-md-7 mb-4 mb-md-0 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <h5>{{ $details[0]->short_description }}</h5>
                 <p>{{ $details[0]->description }}</p>
-                <a href="{{ $details[0]->livelink }}" class="btn btn-outline-black btn-sm">Launch Website</a>
+                <a href="{{ $details[0]->livelink }}" class="btn btn-outline-black btn-sm" target="_blank">Launch Website</a>
             </div>
             <div class="col-lg-4 col-md-5 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
                 <div class="bg_blue p-3 p-md-4">
