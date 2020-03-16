@@ -5,6 +5,7 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\model\Portfolio;
+use App\model\Project_type;
 
 class PortfolioController extends Controller
 {
@@ -15,6 +16,10 @@ class PortfolioController extends Controller
         
         $objPortfolio = new Portfolio();
         $data['details'] = $objPortfolio->getPortfoliodetails();
+        
+        $objprojecttype = new Project_type();
+        $data['projecttype'] = $objprojecttype->gettype();
+
         $data['title'] = 'Mototive Websolution - Portfolio';
         $data['css'] = array();
         $data['plugincss'] = array();
