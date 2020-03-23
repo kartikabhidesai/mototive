@@ -87,4 +87,9 @@ Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
     Route::match(['get', 'post'], 'admin-blog', ['as' => 'admin-blog', 'uses' => 'backend\blog\BlogController@index']);
     Route::match(['get', 'post'], 'blog-ajaxAction', ['as' => 'blog-ajaxAction', 'uses' => 'backend\blog\BlogController@ajaxAction']);
     Route::match(['get', 'post'], 'editblog', ['as' => 'editblog', 'uses' => 'backend\blog\BlogController@editblog']);
+    
+//Client Testimonials
+    Route::match(['get', 'post'], 'client-testimonials', ['as' => 'client-testimonials', 'uses' => 'backend\testimonials\TestimonialsController@index']);
+    Route::match(['get', 'post'], 'testimonials-ajaxAction', ['as' => 'testimonials-ajaxAction', 'uses' => 'backend\testimonials\TestimonialsController@ajaxAction']);
+    Route::match(['get', 'post'], 'edittestimonials', ['as' => 'edittestimonials', 'uses' => 'backend\testimonials\TestimonialsController@edittestimonials']);
 });

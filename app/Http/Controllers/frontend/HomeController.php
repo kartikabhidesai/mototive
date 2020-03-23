@@ -8,6 +8,7 @@ use Route;
 use App\model\Slider;
 use App\model\Portfolio;
 use App\model\Project_type;
+use App\model\Testimonials;
 
 class HomeController extends Controller {
 
@@ -23,6 +24,8 @@ class HomeController extends Controller {
         $data['details'] = $objPortfolio->getPortfoliodetails();
         $objProject_type = new Project_type();
         $data['type'] = $objProject_type->gettype();
+        $objTestimonials = new Testimonials();
+        $data['testimonials'] = $objTestimonials->gettestimonials();
         $data['title'] = 'Mototive Websolution - Home';
         $data['css'] = array();
         $data['plugincss'] = array();
