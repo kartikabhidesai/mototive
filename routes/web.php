@@ -92,4 +92,9 @@ Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
     Route::match(['get', 'post'], 'client-testimonials', ['as' => 'client-testimonials', 'uses' => 'backend\testimonials\TestimonialsController@index']);
     Route::match(['get', 'post'], 'testimonials-ajaxAction', ['as' => 'testimonials-ajaxAction', 'uses' => 'backend\testimonials\TestimonialsController@ajaxAction']);
     Route::match(['get', 'post'], 'edittestimonials', ['as' => 'edittestimonials', 'uses' => 'backend\testimonials\TestimonialsController@edittestimonials']);
+    
+//Company Logo
+    Route::match(['get', 'post'], 'company-logo', ['as' => 'company-logo', 'uses' => 'backend\logo\LogoController@index']);
+    Route::match(['get', 'post'], 'logo-ajaxAction', ['as' => 'testimonials-ajaxAction', 'uses' => 'backend\logo\LogoController@ajaxAction']);
+    Route::match(['get', 'post'], 'editlogo', ['as' => 'editlogo', 'uses' => 'backend\logo\LogoController@editlogo']);
 });

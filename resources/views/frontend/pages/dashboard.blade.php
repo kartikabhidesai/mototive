@@ -609,10 +609,12 @@
         <div class="row">
             <div class="col-md-12 animation" data-animation="fadeInDown" data-animation-delay="0.1s">
                 <div class="cl_logo_slider owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-dots="false" data-autoplay-timeout="2000">
+                    @foreach($logo as $value)
                     <div class="item">
-                        <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo1.png') }}" alt="cl_logo1"/></a>
+                        <a href="#"><img src="{{ url('public/uploads/logo/'.$value->logo) }}" alt="company_logo"/></a>
                     </div>
-                    <div class="item">
+                    @endforeach
+<!--                    <div class="item">
                         <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo2.png') }}" alt="cl_logo2"/></a>
                     </div>
                     <div class="item">
@@ -626,7 +628,7 @@
                     </div>
                     <div class="item">
                         <a href="#"><img src="{{ url('public/frontend/assets/images/cl_logo6.png') }}" alt="cl_logo6"/></a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
