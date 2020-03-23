@@ -604,14 +604,14 @@
 <!-- END SECTION BLOG -->
 
 <!-- START SECTION CLIENT LOGO -->
-<section class="light_gray_bg small_pt small_pb">
+<section class="light_gray_bg small_pt small_pb" style="background-color: lightgray">
     <div class="container">
         <div class="row">
             <div class="col-md-12 animation" data-animation="fadeInDown" data-animation-delay="0.1s">
                 <div class="cl_logo_slider owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-dots="false" data-autoplay-timeout="2000">
                     @foreach($logo as $value)
                     <div class="item">
-                        <a href="#"><img src="{{ url('public/uploads/logo/'.$value->logo) }}" alt="company_logo"/></a>
+                        <a href="#"><img src="{{ url('public/uploads/logo/'.$value->logo) }}" alt="company_logo" style="width: 100px;height: 100px"/></a>
                     </div>
                     @endforeach
 <!--                    <div class="item">
