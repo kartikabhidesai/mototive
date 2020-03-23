@@ -251,54 +251,56 @@
         <div class="row">
             <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.4s">
                 <div class="testimonial_slider testimonial_style4 carousel_slide2 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true">
+                    @foreach($testimonials as $value)
                     <div class="item">
                         <div class="testimonial_box">
                             <div class="testimonial_img">
-                                <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user1.jpg') }}" alt="user"/>
+                                <img class="rounded-circle m-auto" src="{{ url('public/uploads/testimonials/'. $value->image) }}" alt="user"/>
                             </div>
                             <div class="testi_meta">
-                                <h6>Lissa Castro</h6>
-                                <span>Co-Founder</span>
-                                <p>Great work!!! The team was solid, efficient and knowledgeable. They did an amazing job on my very challenging app. I will be using them again. Thank you for doing such a great job!</p>
+                                <h6>{{ $value->name }}</h6>
+                                <span>{{ $value->position }}</span>
+                                <p>{{ $value->message }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="testimonial_box">
-                            <div class="testimonial_img">
-                                <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user2.jpg') }}" alt="user"/>
-                            </div>
-                            <div class="testi_meta">
-                                <h6>Alden Smith</h6>
-                                <span>Creative Designer</span>
-                                <p>MOTOTIVE WEB Solutions has done a great job taking our company’s idea and developing a website as per our niche specifications. The team is technically strong and creative. I will not hesitate to recommend them.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial_box">
-                            <div class="testimonial_img">
-                                <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user3.jpg') }}" alt="user"/>
-                            </div>
-                            <div class="testi_meta">
-                                <h6>Daisy Lana</h6>
-                                <span>Creative Director</span>
-                                <p>We got our APP delivered on time. we are quite happy with the work. I see a great future for this company. Keep making happy clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial_box">
-                            <div class="testimonial_img">
-                                <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user4.jpg') }}" alt="user"/>
-                            </div>
-                            <div class="testi_meta">
-                                <h6>Alfred Amos</h6>
-                                <span>Creative Director</span>
-                                <p>It has been an easy ride being associated with MOTOTIVE. They provide wide range of solutions for all spheres of our business. Their softwares are user friendly and the MOTOTIVE team is readily available 24*7 for support.</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    <!--                    <div class="item">
+                                            <div class="testimonial_box">
+                                                <div class="testimonial_img">
+                                                    <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user2.jpg') }}" alt="user"/>
+                                                </div>
+                                                <div class="testi_meta">
+                                                    <h6>Alden Smith</h6>
+                                                    <span>Creative Designer</span>
+                                                    <p>MOTOTIVE WEB Solutions has done a great job taking our company’s idea and developing a website as per our niche specifications. The team is technically strong and creative. I will not hesitate to recommend them.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="testimonial_box">
+                                                <div class="testimonial_img">
+                                                    <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user3.jpg') }}" alt="user"/>
+                                                </div>
+                                                <div class="testi_meta">
+                                                    <h6>Daisy Lana</h6>
+                                                    <span>Creative Director</span>
+                                                    <p>We got our APP delivered on time. we are quite happy with the work. I see a great future for this company. Keep making happy clients</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="testimonial_box">
+                                                <div class="testimonial_img">
+                                                    <img class="rounded-circle m-auto" src="{{ url('public/frontend/assets/images/user4.jpg') }}" alt="user"/>
+                                                </div>
+                                                <div class="testi_meta">
+                                                    <h6>Alfred Amos</h6>
+                                                    <span>Creative Director</span>
+                                                    <p>It has been an easy ride being associated with MOTOTIVE. They provide wide range of solutions for all spheres of our business. Their softwares are user friendly and the MOTOTIVE team is readily available 24*7 for support.</p>
+                                                </div>
+                                            </div>
+                                        </div>-->
                 </div>
             </div>
         </div>

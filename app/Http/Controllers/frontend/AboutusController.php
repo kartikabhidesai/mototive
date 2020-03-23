@@ -4,6 +4,7 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\model\Testimonials;
 
 class AboutusController extends Controller
 {
@@ -12,6 +13,8 @@ class AboutusController extends Controller
     }
     public function aboutus(){
         
+        $objTestimonials = new Testimonials();
+        $data['testimonials'] = $objTestimonials->gettestimonials();
         $data['title'] = 'Mototive Websolution - About us';
         $data['css'] = array();
         $data['plugincss'] = array();
