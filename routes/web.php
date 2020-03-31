@@ -97,4 +97,9 @@ Route::group(['prefix' => $adminPrefix, 'middleware' => ['admin']], function() {
     Route::match(['get', 'post'], 'company-logo', ['as' => 'company-logo', 'uses' => 'backend\logo\LogoController@index']);
     Route::match(['get', 'post'], 'logo-ajaxAction', ['as' => 'testimonials-ajaxAction', 'uses' => 'backend\logo\LogoController@ajaxAction']);
     Route::match(['get', 'post'], 'editlogo', ['as' => 'editlogo', 'uses' => 'backend\logo\LogoController@editlogo']);
+    
+//Company Logo
+    Route::match(['get', 'post'], 'client', ['as' => 'client', 'uses' => 'backend\client\ClientController@index']);
+    Route::match(['get', 'post'], 'client-ajaxAction', ['as' => 'client-ajaxAction', 'uses' => 'backend\client\ClientController@ajaxAction']);
+    Route::match(['get', 'post'], 'editclient', ['as' => 'editclient', 'uses' => 'backend\client\ClientController@editclient']);
 });

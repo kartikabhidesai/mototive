@@ -57,6 +57,9 @@ $items = Session::get('logindata');
                 <li class="nav-item {{ ($currRoute == 'company-logo')  ? 'active' : '' }}">
                     <a href="{{ route('company-logo') }}" class="nav-link "><span class="pcoded-micon"><i class="fa fa-asterisk" aria-hidden="true"></i></span><span class="pcoded-mtext">Company Logo</span></a>
                 </li>
+                <li class="nav-item {{ ($currRoute == 'client')  ? 'active' : '' }}">
+                    <a href="{{ route('client') }}" class="nav-link "><span class="pcoded-micon"><i class="fa fa-user" aria-hidden="true"></i></span><span class="pcoded-mtext">Client</span></a>
+                </li>
             </ul>
         </div>
     </div>
