@@ -31,6 +31,17 @@
     <link rel="stylesheet" href="{{ url('public/frontend/assets/css/responsive.css') }}">
     <link rel="stylesheet" id="layoutstyle" href="{{ url('public/frontend/assets/color/theme.css') }}">
     <link href="{{ url('public/frontend/assets/css/toastr.min.css') }}" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-44938782-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-44938782-2');
+</script>
+
     <script>
         var baseurl = "{{ asset('/') }}";
     </script>
