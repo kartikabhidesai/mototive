@@ -11,7 +11,7 @@
                     <ol class="breadcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="{{ asset('/') }}">Home</a></li>
                         <li class="breadcrumb-item"><a href="{{ asset('portfolio') }}">Portfolio</a></li>
-                        <li class="breadcrumb-item">Read More</li>
+                        <li class="breadcrumb-item">{{ $details[0]->name }}</li>
                     </ol>
                 </nav>
             </div>
@@ -25,8 +25,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-7 mb-4 mb-md-0 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                <h5>{{ $details[0]->short_description }}</h5>
-                <img height="300px" src="{{ url('public/uploads/portfolio/'.$details[0]->image_name) }}" alt="image">
+                <h3>{{ $details[0]->name }}</h3>
+                <!--<img height="300px" src="{{ url('public/uploads/portfolio/'.$details[0]->image_name) }}" alt="image">-->
                 <p>{{ $details[0]->description }}</p>
                 <a href="{{ $details[0]->livelink }}" class="btn btn-outline-black btn-sm" target="_blank">Launch Website</a>
             </div>
@@ -37,7 +37,7 @@
                         <li><span class="text-uppercase">Project Technology</span>{{ $details[0]->technology }}</li>
                         <li><span class="text-uppercase">Category</span>{{ $details[0]->type }}</li>
 
-                        <li><span class="text-uppercase">PROJECT link</span>{{ substr($details[0]->livelink, strpos($details[0]->livelink, "w") + 0) }}</li>
+                        <li><span class="text-uppercase">PROJECT link</span>{{ $details[0]->livelink }}</li>
 <!--                        <li><span class="text-uppercase">SHARE </span>
                             <ul class="list_none social_icons border_social social_white rounded_social">
                                 <li><a href="#"><i class="ion-social-facebook"></i></a></li>

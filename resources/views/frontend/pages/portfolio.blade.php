@@ -18,44 +18,50 @@
         </div>
     </div>
 </section>
-
-@for($j = 0; $j < count($projecttype); $j++)
-<section class="small_pt">
+<section>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                <div class="heading_s4 text-center">
-                    <h2>{{ $projecttype[$j]->type }}</h2>
-                </div>
+       <div class="row mb-3 mb-sm-5">
+            <div class="col-md-12 text-center">
+                <ul class="list_none portfolio_filter filter_tab1">
+                    <li><a href="#" class="current" data-filter="*">all</a></li>
+                    @for($j = 0; $j < count($projecttype); $j++)
+                    <li><a href="#" data-filter=".{{ $projecttype[$j]->type }}">{{ $projecttype[$j]->type }}</a></li>
+                    @endfor
+                    
+                </ul>
             </div>
         </div>
-        <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.4s">
-            @for($i = 0; $i < count($details); $i++)
-            @if($details[$i]->type == $projecttype[$j]->type)
-            <div class="col-md-4 mt-3 mt-md-4">
-                <div class="flip_box text_white">
-                    <div class="front background_bg overlay_bg3" data-img-src="{{ url('public/uploads/portfolio/',$details[$i]->image) }}">
-                        <div class="inner">
-                            <i class="icon icon-display"></i>
-                            <h5>{{ $details[$i]->name }}</h5>
-                            <p>{{ $details[$i]->short_description }}</p>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="portfolio_container gutter_small work_col3 portfolio_gallery portfolio_style2">
+                	<li class="grid-sizer"></li>
+                    <!-- START PORTFOLIO ITEM -->
+                    @for($i = 0; $i < count($details); $i++)
+                    <li class="portfolio-item {{ $details[$i]->type }}">
+                        <div class="portfolio_item">
+                            <a href="#" class="image_link">
+                                <img src="{{ url('public/uploads/portfolio/',$details[$i]->image) }}" alt="image">
+                            </a>
+                                <div class="portfolio_content">
+                                    <div class="link_container">
+                                        <a href="{{ url('public/uploads/portfolio/',$details[$i]->image) }}" class="image_popup"><i class="ion-image"></i></a>
+                                        <a href="{{ route('portfolioreadmore', $details[$i]->id) }}"><i class="ion-plus"></i></a>
+                                    </div>
+                                    <h5><a href="#">{{ $details[$i]->name }}</a></h5>
+                                    <p>{{ $details[$i]->short_description }}</p>
+                              </div>
                         </div>
-                    </div>
-                    <div class="back bg_blue">
-                        <div class="inner">	
-                            <h5>{{ $details[$i]->name }}</h5>
-                            <p>{{ $details[$i]->short_description }}</p>
-                            <a href="{{ route('portfolioreadmore', $details[$i]->id) }}" class="btn btn-outline-white">Read More</a>
-                        </div>
-                    </div>
-                </div>
+                    </li>
+                    @endfor
+                    <!-- END PORTFOLIO ITEM -->
+                   
+                    
+                   
+                </ul>
             </div>
-            @endif
-            @endfor
         </div>
     </div>
 </section>
-@endfor
 
 <section class="cta_section_small overlay_bg3 px-0">
     <div class="container">
