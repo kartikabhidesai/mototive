@@ -27,7 +27,7 @@
             <div class="col-lg-8 col-md-7 mb-4 mb-md-0 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <h3>{{ $details[0]->name }}</h3>
                 <!--<img height="300px" src="{{ url('public/uploads/portfolio/'.$details[0]->image_name) }}" alt="image">-->
-                <p>{{ $details[0]->description }}</p>
+                <p style="white-space: pre-wrap;">{{ $details[0]->description }}</p>
                 <a href="{{ $details[0]->livelink }}" class="btn btn-outline-black btn-sm" target="_blank">Launch Website</a>
             </div>
             <div class="col-lg-4 col-md-5 animation" data-animation="fadeInUp" data-animation-delay="0.4s">

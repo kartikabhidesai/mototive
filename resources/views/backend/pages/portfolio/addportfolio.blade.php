@@ -48,7 +48,7 @@
                                         <input type="text" class="form-control" name="link" placeholder="Enter Portfolio Live Link"><br>
                                         <input type="text" class="form-control" name="technology" placeholder="Enter Portfolio Technology"><br>
                                         <input type="text" class="form-control" name="short" placeholder="Enter Portfolio Short-Description in 30 words"><br>
-                                        <input type="text" class="form-control" name="description" placeholder="Enter Portfolio Description"><br>
+                                        <textarea type="text" class="form-control" name="description" placeholder="Enter Portfolio Description"></textarea><br>
                                     </div>
                                 </div>
                             </div> 

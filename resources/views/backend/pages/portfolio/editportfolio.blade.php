@@ -51,7 +51,7 @@
                                         <input type="text" class="form-control" name="link" placeholder="Enter Portfolio Live Link" value="{{ $value->livelink }}"><br>
                                         <input type="text" class="form-control" name="technology" placeholder="Enter Portfolio Technology" value="{{ $value->technology }}"><br>
                                         <input type="text" class="form-control" name="short" placeholder="Enter Portfolio Short-Description in 30 words" value="{{ $value->short_description }}"><br>
-                                        <input type="text" class="form-control" name="description" placeholder="Enter Portfolio Description" value="{{ $value->description }}"><br>
+                                        <textarea type="text" class="form-control" name="description" placeholder="Enter Portfolio Description"> {{ $value->description }} </textarea><br>
                                     </div>
                                 </div>
                             </div> 
